@@ -3,66 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Here-Its-Cairo Café | Home</title>
+    <title>Hona-Cairo Restaurant | Authentic Egyptian Cuisine</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Experience the ancient Egyptian aesthetic and cultural heritage at Here-Its-Cairo Café.">
-    <meta name="theme-color" content="#0a0e17">
+    <meta name="description" content="Experience authentic Egyptian cuisine and rich cultural heritage at Hona-Cairo Restaurant.">
+    <meta name="theme-color" content="#0a0f1a">
+    <meta name="color-scheme" content="dark">
 </head>
 <body>
 
-    <!-- Sticky Header -->
+    <!-- Sticky Header with Glassmorphism -->
     <header class="site-header">
         <a href="index.html" class="logo-container">
             <div class="logo-icon">H</div>
-            <span class="logo-text">Here-Its-Cairo</span>
+            <span class="logo-text">Hona-Cairo</span>
         </a>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
+        <!-- Hero Section -->
         <section class="hero">
-            <!-- Placeholder for the attached video/image -->
             <video autoplay loop muted playsinline class="hero-video">
                 <source src="placeholder-video.mp4" type="video/mp4">
-                <!-- Fallback image if video fails -->
-                <img src="placeholder-image.jpg" alt="Hero Background">
+                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="Restaurant Ambiance">
             </video>
+            
             <div class="hero-content">
-                <h1>Welcome to<br>Here-Its-Cairo</h1>
-                <p>Immerse yourself in the rich cultural heritage and ancient Egyptian aesthetic while enjoying our finest selections.</p>
-                <a href="categories.html" class="btn">Explore Our Menu</a>
+                <div class="hero-badge">✦ Fine Dining Experience</div>
+                <h1>Taste the Spirit<br>of Egypt</h1>
+                <p>Immerse yourself in authentic Egyptian flavors where ancient culinary traditions meet contemporary elegance. Every dish tells a story.</p>
+                <div class="hero-cta">
+                    <a href="categories.html" class="btn btn-primary btn-lg">Explore Menu</a>
+                    <a href="contact-us.html" class="btn btn-secondary btn-lg">Reserve Table</a>
+                </div>
             </div>
         </section>
 
+        <!-- Discover Section -->
         <section class="content-section">
-            <h2 class="section-title">Discover Our Offerings</h2>
-            <div class="grid-container">
+            <div class="section-header">
+                <span class="section-subtitle">Discover</span>
+                <h2 class="section-title">What We Offer</h2>
+                <p class="section-description">From traditional Egyptian classics to modern interpretations, experience our culinary artistry.</p>
+            </div>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4">
+                <!-- Menu Card -->
                 <a href="categories.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=400&q=80" alt="Main Menu" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Our Menu">
+                    </div>
                     <div class="card-content">
-                        <h3 class="card-title">Main Menu</h3>
-                        <p class="card-desc">Explore our diverse categories of authentic beverages and delicacies.</p>
+                        <h3 class="card-title">Our Menu</h3>
+                        <p class="card-description">Authentic Egyptian dishes crafted with passion and tradition.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">40+ Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Gallery Card -->
                 <a href="gallery.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Gallery" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Gallery">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Gallery</h3>
-                        <p class="card-desc">View the stunning ambiance and aesthetic of our café.</p>
+                        <p class="card-description">Experience the ambiance and aesthetic of our restaurant.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">Photos</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Reviews Card -->
                 <a href="rate-us.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?auto=format&fit=crop&w=400&q=80" alt="Rate Us" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?auto=format&fit=crop&w=600&q=80" alt="Reviews">
+                    </div>
                     <div class="card-content">
-                        <h3 class="card-title">Rate Us</h3>
-                        <p class="card-desc">Share your experience and help us improve our service.</p>
+                        <h3 class="card-title">Reviews</h3>
+                        <p class="card-description">Share your experience and read what others say about us.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">Rate Us</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Contact Card -->
                 <a href="contact-us.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=400&q=80" alt="Contact Us" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" alt="Contact">
+                    </div>
                     <div class="card-content">
-                        <h3 class="card-title">Contact Us</h3>
-                        <p class="card-desc">Find our location and get in touch with our team.</p>
+                        <h3 class="card-title">Contact</h3>
+                        <p class="card-description">Find our location and get in touch with our team.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">Visit Us</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
             </div>
@@ -76,7 +118,7 @@
             <span class="mobile-nav-label">Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">☕</span>
+            <span class="mobile-nav-icon">🍽️</span>
             <span class="mobile-nav-label">Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
@@ -85,7 +127,7 @@
         </a>
         <a href="rate-us.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Rate</span>
+            <span class="mobile-nav-label">Reviews</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📍</span>
@@ -93,9 +135,26 @@
         </a>
     </nav>
 
-    <!-- Desktop Footer (hidden on mobile) -->
+    <!-- Desktop Footer -->
     <footer class="site-footer">
-        <p class="footer-copy">&copy; 2026 Here-Its-Cairo Café. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">H</div>
+                    <span class="logo-text">Hona-Cairo</span>
+                </a>
+                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance. Where every meal becomes a memorable journey.</p>
+            </div>
+            <div class="footer-links">
+                <a href="categories.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="rate-us.html">Reviews</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>

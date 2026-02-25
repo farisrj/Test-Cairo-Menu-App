@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Here-Its-Cairo Café | Hot Beverages Subcategories</title>
+    <title>Hot Beverages | Hona-Cairo Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Explore the subcategories of Hot Beverages at Here-Its-Cairo Café.">
-    <meta name="theme-color" content="#0a0e17">
+    <meta name="description" content="Explore the subcategories of Hot Beverages at Hona-Cairo Restaurant.">
+    <meta name="theme-color" content="#0a0f1a">
+    <meta name="color-scheme" content="dark">
 </head>
 <body>
 
@@ -14,54 +15,92 @@
     <header class="site-header">
         <a href="index.html" class="logo-container">
             <div class="logo-icon">H</div>
-            <span class="logo-text">Here-Its-Cairo</span>
+            <span class="logo-text">Hona-Cairo</span>
         </a>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="content-section">
-            <div class="breadcrumbs">
-                <a href="index.html">Home</a> <span>›</span> 
-                <a href="categories.html">Main Menu</a> <span>›</span> 
-                Hot Beverages
+        <section class="content-section">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span class="breadcrumbs-separator">›</span>
+                <a href="categories.html">Menu</a>
+                <span class="breadcrumbs-separator">›</span>
+                <span class="breadcrumbs-current">Hot Beverages</span>
+            </nav>
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-subtitle">Menu</span>
+                <h1 class="section-title">Hot Beverages</h1>
+                <p class="section-description">Warm, comforting drinks crafted with authentic Egyptian tradition.</p>
             </div>
 
-            <h1 class="section-title">Hot Beverages</h1>
-            <p class="text-center mb-2" style="color: var(--text-secondary);">Discover our selection of warm, comforting drinks.</p>
-
-            <!-- Grid Layout: Min 2 columns on mobile -->
-            <div class="grid-container">
+            <!-- Subcategories Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4">
+                <!-- Traditional Coffee -->
                 <a href="menu-items.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=400&q=80" alt="Traditional Coffee" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Traditional Coffee">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Traditional Coffee</h3>
-                        <p class="card-desc">Rich, dark roasted coffee brewed to perfection.</p>
+                        <p class="card-description">Rich, dark roasted coffee brewed to perfection using centuries-old methods.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">6 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Egyptian Teas -->
                 <a href="menu-items.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80" alt="Egyptian Teas" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Egyptian Teas">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Egyptian Teas</h3>
-                        <p class="card-desc">Classic black teas and aromatic blends.</p>
+                        <p class="card-description">Classic black teas, aromatic blends, and traditional tea ceremonies.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">8 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Herbal Infusions -->
                 <a href="menu-items.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=400&q=80" alt="Herbal Infusions" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Herbal Infusions">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Herbal Infusions</h3>
-                        <p class="card-desc">Soothing chamomile, hibiscus, and mint infusions.</p>
+                        <p class="card-description">Soothing chamomile, refreshing hibiscus, and cooling mint infusions.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">10 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Specialty Lattes -->
                 <a href="menu-items.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=400&q=80" alt="Specialty Lattes" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Specialty Lattes">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Specialty Lattes</h3>
-                        <p class="card-desc">Creamy espresso-based drinks with unique flavors.</p>
+                        <p class="card-description">Creamy espresso-based drinks with unique Egyptian-inspired flavors.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">5 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Mobile Bottom Navigation -->
@@ -71,7 +110,7 @@
             <span class="mobile-nav-label">Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item active">
-            <span class="mobile-nav-icon">☕</span>
+            <span class="mobile-nav-icon">🍽️</span>
             <span class="mobile-nav-label">Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
@@ -80,7 +119,7 @@
         </a>
         <a href="rate-us.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Rate</span>
+            <span class="mobile-nav-label">Reviews</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📍</span>
@@ -90,7 +129,24 @@
 
     <!-- Desktop Footer -->
     <footer class="site-footer">
-        <p class="footer-copy">&copy; 2026 Here-Its-Cairo Café. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">H</div>
+                    <span class="logo-text">Hona-Cairo</span>
+                </a>
+                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+            </div>
+            <div class="footer-links">
+                <a href="categories.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="rate-us.html">Reviews</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>

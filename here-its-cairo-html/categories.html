@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Here-Its-Cairo Café | Main Menu Categories</title>
+    <title>Menu Categories | Hona-Cairo Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Explore the main menu categories at Here-Its-Cairo Café.">
-    <meta name="theme-color" content="#0a0e17">
+    <meta name="description" content="Explore our menu categories at Hona-Cairo Restaurant.">
+    <meta name="theme-color" content="#0a0f1a">
+    <meta name="color-scheme" content="dark">
 </head>
 <body>
 
@@ -14,52 +15,150 @@
     <header class="site-header">
         <a href="index.html" class="logo-container">
             <div class="logo-icon">H</div>
-            <span class="logo-text">Here-Its-Cairo</span>
+            <span class="logo-text">Hona-Cairo</span>
         </a>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="content-section">
-            <div class="breadcrumbs">
-                <a href="index.html">Home</a> <span>›</span> Main Menu
+        <section class="content-section">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span class="breadcrumbs-separator">›</span>
+                <span class="breadcrumbs-current">Menu</span>
+            </nav>
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-subtitle">Our Menu</span>
+                <h1 class="section-title">Select a Category</h1>
+                <p class="section-description">Choose from our carefully curated selection of authentic Egyptian dishes.</p>
             </div>
 
-            <h1 class="section-title">Main Menu Categories</h1>
-            <p class="text-center mb-2" style="color: var(--text-secondary);">Select a category to explore our authentic offerings.</p>
-
-            <!-- Grid Layout: Min 2 columns on mobile -->
-            <div class="grid-container">
+            <!-- Categories Grid -->
+            <div class="grid grid-cols-2 md:grid-cols-4">
+                <!-- Hot Beverages -->
                 <a href="subcategories.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Hot Beverages" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Hot Beverages">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Hot Beverages</h3>
-                        <p class="card-desc">Traditional Egyptian teas, rich coffees, and warm infusions.</p>
+                        <p class="card-description">Traditional Egyptian teas, aromatic coffees, and warm herbal infusions.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">12 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Cold Refreshments -->
                 <a href="subcategories.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=400&q=80" alt="Cold Refreshments" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=600&q=80" alt="Cold Refreshments">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Cold Refreshments</h3>
-                        <p class="card-desc">Chilled juices, iced coffees, and signature mocktails.</p>
+                        <p class="card-description">Fresh juices, iced beverages, and signature cooling drinks.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">8 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Authentic Desserts -->
                 <a href="subcategories.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=400&q=80" alt="Authentic Desserts" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80" alt="Authentic Desserts">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Authentic Desserts</h3>
-                        <p class="card-desc">Sweet treats inspired by ancient recipes and modern tastes.</p>
+                        <p class="card-description">Sweet delights inspired by centuries-old Egyptian recipes.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">15 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
+
+                <!-- Fresh Pastries -->
                 <a href="subcategories.html" class="card">
-                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=400&q=80" alt="Fresh Pastries" class="card-img">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Fresh Pastries">
+                    </div>
                     <div class="card-content">
                         <h3 class="card-title">Fresh Pastries</h3>
-                        <p class="card-desc">Freshly baked goods, perfect for pairing with your drink.</p>
+                        <p class="card-description">Oven-fresh baked goods, perfect companions to your drink.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">10 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Main Dishes -->
+                <a href="subcategories.html" class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=600&q=80" alt="Main Dishes">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Main Dishes</h3>
+                        <p class="card-description">Hearty Egyptian classics from koshary to tagines.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">18 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Appetizers -->
+                <a href="subcategories.html" class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1600336153113-d62c9596daaa?auto=format&fit=crop&w=600&q=80" alt="Appetizers">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Appetizers</h3>
+                        <p class="card-description">Start your meal with our selection of mezze and starters.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">14 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Soups & Salads -->
+                <a href="subcategories.html" class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80" alt="Soups & Salads">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Soups & Salads</h3>
+                        <p class="card-description">Fresh, healthy options with Egyptian-inspired flavors.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">9 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Specials -->
+                <a href="subcategories.html" class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Chef's Specials">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Chef's Specials</h3>
+                        <p class="card-description">Signature dishes crafted by our master chefs.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">6 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
                     </div>
                 </a>
             </div>
-        </div>
+        </section>
     </main>
 
     <!-- Mobile Bottom Navigation -->
@@ -69,7 +168,7 @@
             <span class="mobile-nav-label">Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item active">
-            <span class="mobile-nav-icon">☕</span>
+            <span class="mobile-nav-icon">🍽️</span>
             <span class="mobile-nav-label">Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
@@ -78,7 +177,7 @@
         </a>
         <a href="rate-us.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Rate</span>
+            <span class="mobile-nav-label">Reviews</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📍</span>
@@ -88,7 +187,24 @@
 
     <!-- Desktop Footer -->
     <footer class="site-footer">
-        <p class="footer-copy">&copy; 2026 Here-Its-Cairo Café. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">H</div>
+                    <span class="logo-text">Hona-Cairo</span>
+                </a>
+                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+            </div>
+            <div class="footer-links">
+                <a href="categories.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="rate-us.html">Reviews</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>

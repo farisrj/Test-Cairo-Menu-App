@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Here-Its-Cairo Café | Rate Us</title>
+    <title>Rate Your Experience | Hona-Cairo Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Share your experience and rate Here-Its-Cairo Café.">
-    <meta name="theme-color" content="#0a0e17">
+    <meta name="description" content="Share your experience and rate Hona-Cairo Restaurant.">
+    <meta name="theme-color" content="#0a0f1a">
+    <meta name="color-scheme" content="dark">
 </head>
 <body>
 
@@ -14,58 +15,109 @@
     <header class="site-header">
         <a href="index.html" class="logo-container">
             <div class="logo-icon">H</div>
-            <span class="logo-text">Here-Its-Cairo</span>
+            <span class="logo-text">Hona-Cairo</span>
         </a>
     </header>
 
     <!-- Main Content -->
     <main class="main-content">
-        <div class="content-section">
-            <div class="breadcrumbs">
-                <a href="index.html">Home</a> <span>›</span> Rate Us
+        <section class="content-section">
+            <!-- Breadcrumbs -->
+            <nav class="breadcrumbs">
+                <a href="index.html">Home</a>
+                <span class="breadcrumbs-separator">›</span>
+                <span class="breadcrumbs-current">Reviews</span>
+            </nav>
+
+            <!-- Section Header -->
+            <div class="section-header">
+                <span class="section-subtitle">Your Feedback</span>
+                <h1 class="section-title">Rate Your Experience</h1>
+                <p class="section-description">We value your opinion. Help us improve by sharing your thoughts about your visit.</p>
             </div>
 
-            <h1 class="section-title">Rate Your Experience</h1>
-            <p class="text-center mb-2" style="color: var(--text-secondary);">We value your feedback. Please let us know how we did!</p>
-
+            <!-- Rating Form -->
             <div class="form-container">
-                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your feedback!');">
+                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your feedback! We appreciate your time.');">
                     
-                    <div class="form-group">
-                        <label>Overall Rating</label>
-                        <div class="rating-stars">
+                    <!-- Star Rating -->
+                    <div class="form-group" style="text-align: center;">
+                        <label class="form-label" style="display: block; margin-bottom: 1rem;">How was your experience?</label>
+                        <div class="rating-stars" style="justify-content: center;">
                             <input type="radio" id="star5" name="rating" value="5" required>
-                            <label for="star5" title="5 stars">★</label>
+                            <label for="star5" title="5 stars - Excellent">★</label>
                             <input type="radio" id="star4" name="rating" value="4">
-                            <label for="star4" title="4 stars">★</label>
+                            <label for="star4" title="4 stars - Very Good">★</label>
                             <input type="radio" id="star3" name="rating" value="3">
-                            <label for="star3" title="3 stars">★</label>
+                            <label for="star3" title="3 stars - Good">★</label>
                             <input type="radio" id="star2" name="rating" value="2">
-                            <label for="star2" title="2 stars">★</label>
+                            <label for="star2" title="2 stars - Fair">★</label>
                             <input type="radio" id="star1" name="rating" value="1">
-                            <label for="star1" title="1 star">★</label>
+                            <label for="star1" title="1 star - Poor">★</label>
                         </div>
                     </div>
 
+                    <!-- Name Field -->
                     <div class="form-group">
-                        <label for="name">Your Name (Optional)</label>
-                        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+                        <label for="name" class="form-label">Your Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name (optional)">
                     </div>
 
+                    <!-- Email Field -->
                     <div class="form-group">
-                        <label for="email">Email Address (Optional)</label>
-                        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email (optional)">
                     </div>
 
+                    <!-- Visit Date -->
                     <div class="form-group">
-                        <label for="comments">Comments</label>
-                        <textarea id="comments" name="comments" class="form-control" rows="5" placeholder="Tell us about your experience..." required></textarea>
+                        <label for="visit-date" class="form-label">Date of Visit</label>
+                        <input type="date" id="visit-date" name="visit_date" class="form-input">
                     </div>
 
-                    <button type="submit" class="btn" style="width: 100%;">Submit Rating</button>
+                    <!-- Feedback Type -->
+                    <div class="form-group">
+                        <label for="feedback-type" class="form-label">What did you visit us for?</label>
+                        <select id="feedback-type" name="feedback_type" class="form-input">
+                            <option value="">Select an option</option>
+                            <option value="dining">Dining</option>
+                            <option value="coffee">Coffee & Drinks</option>
+                            <option value="takeaway">Takeaway</option>
+                            <option value="event">Special Event</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Comments -->
+                    <div class="form-group">
+                        <label for="comments" class="form-label">Your Comments</label>
+                        <textarea id="comments" name="comments" class="form-input form-textarea" placeholder="Tell us about your experience... What did you enjoy? What could we improve?"></textarea>
+                    </div>
+
+                    <!-- Recommend -->
+                    <div class="form-group" style="display: flex; align-items: center; gap: 0.75rem;">
+                        <input type="checkbox" id="recommend" name="recommend" style="width: 20px; height: 20px; accent-color: var(--brand-accent);">
+                        <label for="recommend" class="form-label" style="margin-bottom: 0;">I would recommend Hona-Cairo to friends and family</label>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="form-group" style="margin-top: 2rem; text-align: center;">
+                        <button type="submit" class="btn btn-primary btn-lg" style="min-width: 200px;">
+                            Submit Review
+                        </button>
+                    </div>
+
                 </form>
             </div>
-        </div>
+
+            <!-- Trust Indicators -->
+            <div style="text-align: center; margin-top: 3rem; padding: 2rem; opacity: 0.7;">
+                <p style="font-size: var(--text-sm); color: var(--text-tertiary);">
+                    🔒 Your feedback is kept confidential and helps us improve our service.<br>
+                    We read every review and appreciate your honest opinion.
+                </p>
+            </div>
+        </section>
     </main>
 
     <!-- Mobile Bottom Navigation -->
@@ -75,7 +127,7 @@
             <span class="mobile-nav-label">Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">☕</span>
+            <span class="mobile-nav-icon">🍽️</span>
             <span class="mobile-nav-label">Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
@@ -84,7 +136,7 @@
         </a>
         <a href="rate-us.html" class="mobile-nav-item active">
             <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Rate</span>
+            <span class="mobile-nav-label">Reviews</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📍</span>
@@ -94,7 +146,24 @@
 
     <!-- Desktop Footer -->
     <footer class="site-footer">
-        <p class="footer-copy">&copy; 2026 Here-Its-Cairo Café. All rights reserved.</p>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <a href="index.html" class="logo-container">
+                    <div class="logo-icon">H</div>
+                    <span class="logo-text">Hona-Cairo</span>
+                </a>
+                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+            </div>
+            <div class="footer-links">
+                <a href="categories.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="rate-us.html">Reviews</a>
+                <a href="contact-us.html">Contact</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+        </div>
     </footer>
 
 </body>
