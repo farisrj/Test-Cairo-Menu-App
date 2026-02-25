@@ -54,6 +54,15 @@
   padding: 0;
 }
 
+/* Mobile-first base styles */
+html {
+  font-size: 16px;
+}
+
+body {
+  padding-bottom: 80px; /* Space for bottom nav */
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -520,7 +529,87 @@ a:hover {
 }
 
 /* ==========================================
-   FOOTER — Modern Minimal
+   MOBILE BOTTOM NAVIGATION — Elegant App-like
+   ========================================== */
+.mobile-bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 70px;
+  background: rgba(10, 14, 23, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 0.5rem;
+  z-index: 9999;
+  box-shadow: 0 -4px 30px rgba(0, 0, 0, 0.4);
+}
+
+.mobile-nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: var(--text-muted);
+  padding: 0.5rem;
+  border-radius: 12px;
+  transition: all 0.25s ease;
+  min-width: 60px;
+  position: relative;
+}
+
+.mobile-nav-item:hover,
+.mobile-nav-item:active {
+  color: var(--text-secondary);
+  background: rgba(212, 175, 55, 0.08);
+}
+
+.mobile-nav-item.active {
+  color: var(--gold);
+}
+
+.mobile-nav-item.active::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  width: 24px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light));
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 12px rgba(212, 175, 55, 0.6);
+}
+
+.mobile-nav-icon {
+  font-size: 1.4rem;
+  margin-bottom: 2px;
+  display: block;
+}
+
+.mobile-nav-label {
+  font-size: 0.65rem;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  text-transform: uppercase;
+}
+
+/* Hide mobile nav on tablet and up */
+@media (min-width: 768px) {
+  .mobile-bottom-nav {
+    display: none;
+  }
+  
+  body {
+    padding-bottom: 0;
+  }
+}
+
+/* ==========================================
+   FOOTER — Modern Minimal (Desktop only)
    ========================================== */
 .site-footer {
   background: var(--bg-secondary);
@@ -528,6 +617,13 @@ a:hover {
   padding: 3rem 1.5rem 2rem;
   border-top: 1px solid var(--border-color);
   margin-top: auto;
+}
+
+/* Desktop: keep footer visible */
+@media (min-width: 768px) {
+  .site-footer {
+    display: block;
+  }
 }
 
 .footer-nav {
