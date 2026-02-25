@@ -7,13 +7,13 @@
 
 :root {
   /* Color Palette inspired by Ancient Egypt */
-  --primary-blue: #1a3c5b; /* Deep Nile Blue */
+  --primary-blue: #ff5722; /* Placeholder for vibrant brand color (was Navy #1a3c5b) */
   --primary-gold: #d4af37; /* Egyptian Gold */
   --bg-sand: #f4ecd8; /* Papyrus/Sand */
   --text-dark: #2c2c2c; /* Charcoal */
   --accent-red: #e2725b; /* Terracotta */
   --card-bg: #ffffff;
-  --footer-bg: #0d1f2d;
+  --footer-bg: #e64a19; /* Placeholder for dark vibrant brand color (was #0d1f2d) */
   
   /* Typography */
   --font-heading: 'Cinzel', serif;
@@ -34,8 +34,27 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  position: relative;
   /* Subtle sandstone texture using SVG data URI */
   background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+}
+
+/* Decorative background images beneath the body section */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Placeholder for decorative background images */
+  background-image: url('placeholder-decor-left.png'), url('placeholder-decor-right.png');
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+  opacity: 0.1; /* Subtle opacity so it doesn't overpower content */
+  z-index: -1;
+  pointer-events: none;
 }
 
 /* Typography */
@@ -105,21 +124,53 @@ a:hover {
 /* Main Content Area */
 .main-content {
   flex: 1;
+  width: 100%;
+}
+
+.content-section {
   padding: 2rem 1rem;
   max-width: 1200px;
   margin: 0 auto;
-  width: 100%;
 }
 
 /* Hero Section */
 .hero {
+  position: relative;
   text-align: center;
-  padding: 4rem 1rem;
-  background: linear-gradient(rgba(26, 60, 91, 0.8), rgba(26, 60, 91, 0.8)), url('https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&w=1200&q=80') center/cover;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   color: var(--bg-sand);
-  border-radius: 8px;
-  margin-bottom: 2rem;
-  border: 2px solid var(--primary-gold);
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -2;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for text readability */
+  z-index: -1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
 }
 
 .hero h1 {
@@ -174,7 +225,7 @@ a:hover {
 
 .card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 15px rgba(26, 60, 91, 0.15);
+  box-shadow: 0 8px 15px rgba(255, 87, 34, 0.15);
   border-color: var(--primary-gold);
 }
 
