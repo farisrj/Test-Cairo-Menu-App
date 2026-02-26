@@ -617,7 +617,16 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none; /* Hidden until actual GIF is provided */
+  display: none; /* Hidden by default, shown via JS when loaded */
+}
+
+/* When GIF is loaded and has content */
+.gif-placeholder.has-gif .gif-image {
+  display: block;
+}
+
+.gif-placeholder.has-gif .gif-fallback {
+  display: none;
 }
 
 /* Fallback UI when no GIF is loaded */
