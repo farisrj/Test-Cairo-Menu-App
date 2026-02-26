@@ -617,63 +617,7 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  display: none; /* Hidden by default, shown via JS when loaded */
-}
-
-/* When GIF is loaded and has content */
-.gif-placeholder.has-gif .gif-image {
-  display: block;
-}
-
-.gif-placeholder.has-gif .gif-fallback {
-  display: none;
-}
-
-/* Fallback UI when no GIF is loaded */
-.gif-fallback {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: var(--space-6);
-  text-align: center;
-  background: linear-gradient(180deg, 
-    rgba(15, 10, 26, 0.3) 0%, 
-    rgba(124, 58, 237, 0.2) 50%, 
-    rgba(6, 182, 212, 0.3) 100%
-  );
-}
-
-.gif-fallback-icon {
-  font-size: 4rem;
-  margin-bottom: var(--space-4);
-  animation: bounce 2s ease-in-out infinite;
-}
-
-.gif-fallback-text {
-  font-family: var(--font-display);
-  font-size: var(--text-2xl);
-  font-weight: 700;
-  color: white;
-  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.5);
-  margin-bottom: var(--space-2);
-}
-
-.gif-fallback-subtext {
-  font-family: var(--font-body);
-  font-size: var(--text-sm);
-  color: rgba(255, 255, 255, 0.8);
-  background: rgba(0, 0, 0, 0.4);
-  padding: var(--space-2) var(--space-4);
-  border-radius: 20px;
-  backdrop-filter: blur(10px);
-}
-
-@keyframes bounce {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+  display: block; /* Show the GIF */
 }
 
 /* Scroll Indicator */

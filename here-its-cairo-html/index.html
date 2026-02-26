@@ -31,14 +31,8 @@
             <div class="gif-container">
                 <!-- GIF Placeholder - 9:16 Aspect Ratio -->
                 <div class="gif-placeholder">
-                    <!-- TO USE YOUR GIF: Place your GIF file in: here-its-cairo-html/images/hero.gif -->
-                    <img src="images/hero.gif" alt="Restaurant Experience GIF" class="gif-image" id="heroGif" onerror="this.style.display='none'">
-                    <!-- Fallback shown when GIF is not available -->
-                    <div class="gif-fallback" id="gifFallback">
-                        <span class="gif-fallback-icon">🎬</span>
-                        <span class="gif-fallback-text">Add Your GIF</span>
-                        <span class="gif-fallback-subtext">Place file at: images/hero.gif<br>9:16 Aspect Ratio • Full Screen</span>
-                    </div>
+                    <!-- Main GIF Image -->
+                    <img src="Cairo_Original_Splash_gm_optimized.gif" alt="Restaurant Experience GIF" class="gif-image" id="heroGif">
                 </div>
                 
                 <!-- Scroll Indicator -->
@@ -279,25 +273,6 @@
             }
         })();
 
-        // GIF Load Handler — Hide fallback when GIF loads successfully
-        (function() {
-            const heroGif = document.getElementById('heroGif');
-            const gifFallback = document.getElementById('gifFallback');
-            
-            if (heroGif && gifFallback) {
-                heroGif.addEventListener('load', function() {
-                    // GIF loaded successfully
-                    gifFallback.style.display = 'none';
-                    heroGif.style.display = 'block';
-                });
-                
-                heroGif.addEventListener('error', function() {
-                    // GIF failed to load, show fallback
-                    heroGif.style.display = 'none';
-                    gifFallback.style.display = 'flex';
-                });
-            }
-        })();
     </script>
 </body>
 </html>
