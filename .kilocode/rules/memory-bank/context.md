@@ -185,3 +185,4 @@ export async function GET() {
 | 2026-02-25 | Complete redesign with modern futuristic dark theme (glassmorphism, dark mode, new fonts, animations) |
 | 2026-02-25 | Multi-tenancy design system revamp (CSS architecture, neumorphism, brand identity, mobile-first) |
 | 2026-02-26 | Hona-Qahera dual-mode redesign with light/dark theme toggle, futuristic purple/cyan/pink palette, real Unsplash images |
+| 2026-02-26 | Enhanced theme toggle visibility with prominent cyan border and glow effects |
