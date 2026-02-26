@@ -26,6 +26,32 @@
 
     <!-- Main Content -->
     <main class="main-content">
+        <!-- Hero GIF Section - Full Screen Mobile Experience -->
+        <section class="hero-gif-section">
+            <div class="gif-container">
+                <!-- GIF Placeholder - 9:16 Aspect Ratio -->
+                <div class="gif-placeholder">
+                    <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbGtxdHRiM2FkbmV0dWd3eW1wZ3RqY3B1Z2Z1dGZ1dGZ1dCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/placeholder.gif" alt="Restaurant Experience GIF" class="gif-image" id="heroGif">
+                    <!-- Fallback/Loading State -->
+                    <div class="gif-fallback">
+                        <span class="gif-fallback-icon">🎬</span>
+                        <span class="gif-fallback-text">Your GIF Here</span>
+                        <span class="gif-fallback-subtext">9:16 Aspect Ratio • Replace with actual GIF</span>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span class="scroll-text">Scroll to explore</span>
+                    <div class="scroll-arrow">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 5v14M5 12l7 7 7-7"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Hero Section -->
         <section class="hero">
             <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="Hona-Qahera Restaurant Ambiance" class="hero-video">
@@ -208,6 +234,54 @@
             html.setAttribute('data-theme', theme);
             updateThemeUI(theme);
         }
+
+        // Hero GIF Section — Header & Mobile Nav Scroll Handler
+        (function() {
+            const header = document.querySelector('.site-header');
+            const mobileNav = document.querySelector('.mobile-nav');
+            const gifSection = document.querySelector('.hero-gif-section');
+            const siteFooter = document.querySelector('.site-footer');
+            
+            if (!gifSection) return;
+            
+            function updateHeaderState() {
+                const scrollY = window.scrollY;
+                const gifSectionBottom = gifSection.offsetTop + gifSection.offsetHeight;
+                const isOverGif = scrollY < gifSectionBottom;
+                
+                // Toggle header transparency
+                if (isOverGif) {
+                    header.classList.add('site-header--transparent');
+                    mobileNav.classList.add('mobile-nav--hidden');
+                } else {
+                    header.classList.remove('site-header--transparent');
+                    mobileNav.classList.remove('mobile-nav--hidden');
+                }
+            }
+            
+            // Update on scroll
+            window.addEventListener('scroll', updateHeaderState, { passive: true });
+            
+            // Initial check
+            updateHeaderState();
+            
+            // Smooth scroll for scroll indicator
+            const scrollIndicator = document.querySelector('.scroll-indicator');
+            if (scrollIndicator) {
+                scrollIndicator.addEventListener('click', () => {
+                    const heroSection = document.querySelector('.hero');
+                    if (heroSection) {
+                        heroSection.scrollIntoView({ behavior: 'smooth' });
+                    }
+                });
+                scrollIndicator.style.cursor = 'pointer';
+            }
+        })();
+
+        // GIF Placeholder — Easy replacement function
+        // To replace with actual GIF, update the src attribute:
+        // document.getElementById('heroGif').src = 'path/to/your.gif';
+        // Then call: document.querySelector('.gif-placeholder').classList.add('has-gif');
     </script>
 </body>
 </html>
