@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery | Hona-Cairo Restaurant</title>
+    <title>Gallery | Hona-Qahera Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="View the stunning ambiance and aesthetic of Hona-Cairo Restaurant.">
-    <meta name="theme-color" content="#0a0f1a">
-    <meta name="color-scheme" content="dark">
+    <meta name="description" content="View our restaurant gallery at Hona-Qahera.">
+    <meta name="theme-color" content="#0f0a1a">
+    <meta name="color-scheme" content="dark light">
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+        <span class="theme-toggle-text" id="themeText">Dark</span>
+    </button>
 
     <!-- Sticky Header -->
     <header class="site-header">
         <a href="index.html" class="logo-container">
-            <div class="logo-icon">H</div>
-            <span class="logo-text">Hona-Cairo</span>
+            <div class="logo-icon">HQ</div>
+            <span class="logo-text">Hona<span>-Qahera</span></span>
         </a>
     </header>
 
@@ -31,95 +36,98 @@
 
             <!-- Section Header -->
             <div class="section-header">
-                <span class="section-subtitle">Visual Journey</span>
-                <h1 class="section-title">Our Gallery</h1>
-                <p class="section-description">A glimpse into the elegant atmosphere and culinary artistry of Hona-Cairo.</p>
+                <span class="section-subtitle">Gallery</span>
+                <h1 class="section-title">Our Visual Journey</h1>
+                <p class="section-description">Explore the ambiance, dishes, and moments that make Hona-Qahera special.</p>
             </div>
 
             <!-- Gallery Grid -->
-            <div class="gallery">
+            <div class="gallery-grid">
+                <!-- Interior Shots -->
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Restaurant Interior">
-                    <div class="gallery-caption">
-                        <h4>Elegant Interior</h4>
-                        <p class="text-secondary">Our main dining area</p>
+                    <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=400&q=80" alt="Restaurant Interior">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Main Dining Hall</h4>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Coffee Art">
-                    <div class="gallery-caption">
-                        <h4>Coffee Artistry</h4>
-                        <p class="text-secondary">Handcrafted beverages</p>
+                    <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=400&q=80" alt="Elegant Dining Setup">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Elegant Dining</h4>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?auto=format&fit=crop&w=600&q=80" alt="Dessert Selection">
-                    <div class="gallery-caption">
-                        <h4>Sweet Delights</h4>
-                        <p class="text-secondary">Authentic desserts</p>
+                    <img src="https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?auto=format&fit=crop&w=400&q=80" alt="Bar Area">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Cocktail Bar</h4>
                     </div>
                 </div>
+
+                <!-- Food Dishes -->
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" alt="Outdoor Seating">
-                    <div class="gallery-caption">
-                        <h4>Outdoor Terrace</h4>
-                        <p class="text-secondary">Al fresco dining</p>
+                    <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=400&q=80" alt="Grilled Meat Platter">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Mixed Grill</h4>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=600&q=80" alt="Cold Beverages">
-                    <div class="gallery-caption">
-                        <h4>Refreshing Drinks</h4>
-                        <p class="text-secondary">Signature beverages</p>
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=400&q=80" alt="Gourmet Burger">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Signature Burger</h4>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80" alt="Fresh Pastries">
-                    <div class="gallery-caption">
-                        <h4>Fresh Pastries</h4>
-                        <p class="text-secondary">Daily baked goods</p>
+                    <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=400&q=80" alt="Egyptian Mezze">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Mezze Platter</h4>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Tea Service">
-                    <div class="gallery-caption">
-                        <h4>Tea Ceremony</h4>
-                        <p class="text-secondary">Traditional service</p>
+                    <img src="https://images.unsplash.com/photo-1579631542720-3a87824fff86?auto=format&fit=crop&w=400&q=80" alt="Fresh Seafood">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Grilled Sea Bass</h4>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Artisan Bread">
-                    <div class="gallery-caption">
-                        <h4>Artisan Bread</h4>
-                        <p class="text-secondary">House-made daily</p>
+                    <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=400&q=80" alt="Vegetarian Dish">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Vegetable Tagine</h4>
                     </div>
                 </div>
+
+                <!-- Beverages -->
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Fine Dining">
-                    <div class="gallery-caption">
-                        <h4>Fine Dining</h4>
-                        <p class="text-secondary">Culinary excellence</p>
+                    <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=400&q=80" alt="Tea Service">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Traditional Tea</h4>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1600336153113-d62c9596daaa?auto=format&fit=crop&w=600&q=80" alt="Chef's Special">
-                    <div class="gallery-caption">
-                        <h4>Chef's Creations</h4>
-                        <p class="text-secondary">Signature dishes</p>
+                    <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=400&q=80" alt="Coffee Art">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Arabic Coffee</h4>
                     </div>
                 </div>
+
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80" alt="Ingredients">
-                    <div class="gallery-caption">
-                        <h4>Fresh Ingredients</h4>
-                        <p class="text-secondary">Quality produce</p>
+                    <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=400&q=80" alt="Fresh Juice">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Fresh Juices</h4>
                     </div>
                 </div>
+
+                <!-- Desserts -->
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=600&q=80" alt="Main Course">
-                    <div class="gallery-caption">
-                        <h4>Main Courses</h4>
-                        <p class="text-secondary">Hearty flavors</p>
+                    <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=400&q=80" alt="Baklava">
+                    <div class="gallery-item-overlay">
+                        <h4 class="gallery-item-title">Baklava</h4>
                     </div>
                 </div>
             </div>
@@ -127,26 +135,22 @@
     </main>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav">
+    <nav class="mobile-nav">
         <a href="index.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🏠</span>
-            <span class="mobile-nav-label">Home</span>
+            <span>Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🍽️</span>
-            <span class="mobile-nav-label">Menu</span>
+            <span>Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item active">
             <span class="mobile-nav-icon">📸</span>
-            <span class="mobile-nav-label">Gallery</span>
-        </a>
-        <a href="rate-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Reviews</span>
+            <span>Gallery</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">📍</span>
-            <span class="mobile-nav-label">Contact</span>
+            <span class="mobile-nav-icon">📞</span>
+            <span>Contact</span>
         </a>
     </nav>
 
@@ -154,23 +158,68 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-icon">H</div>
-                    <span class="logo-text">Hona-Cairo</span>
-                </a>
-                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+                <div class="logo-icon">HQ</div>
+                <p>Experience the future of Egyptian cuisine. Where tradition meets innovation in every dish we serve.</p>
             </div>
             <div class="footer-links">
-                <a href="categories.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="rate-us.html">Reviews</a>
-                <a href="contact-us.html">Contact</a>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="categories.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="rate-us.html">Reviews</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+201234567890">+20 123 456 7890</a></li>
+                    <li><a href="mailto:info@honaqahera.com">info@honaqahera.com</a></li>
+                    <li>Cairo, Egypt</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+            <p>&copy; 2026 Hona-Qahera Restaurant. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const html = document.documentElement;
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeUI(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            }
+        }
+
+        if (!localStorage.getItem('theme')) {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = prefersDark ? 'dark' : 'light';
+            html.setAttribute('data-theme', theme);
+            updateThemeUI(theme);
+        }
+    </script>
 </body>
 </html>

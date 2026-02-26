@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traditional Coffee | Hona-Cairo Restaurant</title>
+    <title>Traditional Tea | Hona-Qahera Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Explore our Traditional Coffee menu at Hona-Cairo Restaurant.">
-    <meta name="theme-color" content="#0a0f1a">
-    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Explore traditional Egyptian tea at Hona-Qahera Restaurant.">
+    <meta name="theme-color" content="#0f0a1a">
+    <meta name="color-scheme" content="dark light">
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+        <span class="theme-toggle-text" id="themeText">Dark</span>
+    </button>
 
     <!-- Sticky Header -->
     <header class="site-header">
         <a href="index.html" class="logo-container">
-            <div class="logo-icon">H</div>
-            <span class="logo-text">Hona-Cairo</span>
+            <div class="logo-icon">HQ</div>
+            <span class="logo-text">Hona<span>-Qahera</span></span>
         </a>
     </header>
 
@@ -30,104 +35,90 @@
                 <span class="breadcrumbs-separator">›</span>
                 <a href="subcategories.html">Hot Beverages</a>
                 <span class="breadcrumbs-separator">›</span>
-                <span class="breadcrumbs-current">Traditional Coffee</span>
+                <span class="breadcrumbs-current">Traditional Tea</span>
             </nav>
 
             <!-- Section Header -->
             <div class="section-header">
-                <span class="section-subtitle">Menu</span>
-                <h1 class="section-title">Traditional Coffee</h1>
-                <p class="section-description">Experience the authentic taste of our carefully sourced and roasted beans.</p>
+                <span class="section-subtitle">Traditional Tea</span>
+                <h1 class="section-title">Our Tea Selection</h1>
+                <p class="section-description">Authentic Egyptian teas prepared with traditional methods and premium ingredients.</p>
             </div>
 
-            <!-- Menu Items Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4">
-                <!-- Turkish Coffee -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Turkish Coffee">
+            <!-- Menu Items List -->
+            <div class="grid grid-cols-1">
+                <!-- Egyptian Black Tea -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=200&q=80" alt="Egyptian Black Tea">
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Authentic Turkish Coffee</h3>
-                        <p class="card-description">Finely ground coffee brewed in a traditional cezve, served unfiltered with optional cardamom.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">Hot</span>
-                            <span class="card-price">EGP 45</span>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Egyptian Black Tea</h3>
+                            <span class="menu-item-price">25 EGP</span>
+                        </div>
+                        <p class="menu-item-description">Classic Egyptian black tea brewed to perfection. Strong, aromatic, and served in traditional glass cups.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-item-tag">Hot</span>
+                            <span class="menu-item-tag">Traditional</span>
+                            <span class="menu-item-tag">Caffeinated</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Classic Espresso -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=600&q=80" alt="Espresso">
+                <!-- Mint Tea -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=200&q=80" alt="Fresh Mint Tea">
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Classic Espresso</h3>
-                        <p class="card-description">A concentrated shot of our signature dark roast blend with rich crema.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">Strong</span>
-                            <span class="card-price">EGP 35</span>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Mint Tea (Shai bil Na'na')</h3>
+                            <span class="menu-item-price">30 EGP</span>
+                        </div>
+                        <p class="menu-item-description">Our signature tea with fresh garden mint leaves. The perfect balance of robust tea and refreshing mint.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-item-tag">Signature</span>
+                            <span class="menu-item-tag">Fresh Mint</span>
+                            <span class="menu-item-tag">Popular</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Americano -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1551030173-122aabc4489c?auto=format&fit=crop&w=600&q=80" alt="Americano">
+                <!-- Sage Tea -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1563911892437-f53e9e5e8255?auto=format&fit=crop&w=200&q=80" alt="Sage Tea">
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Americano</h3>
-                        <p class="card-description">Espresso diluted with hot water for a smooth, rich flavor profile.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">Smooth</span>
-                            <span class="card-price">EGP 40</span>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Sage Tea (Maramia)</h3>
+                            <span class="menu-item-price">35 EGP</span>
+                        </div>
+                        <p class="menu-item-description">Traditional sage tea known for its soothing properties. Earthy, aromatic, and perfect for relaxation.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-item-tag">Herbal</span>
+                            <span class="menu-item-tag">Relaxing</span>
+                            <span class="menu-item-tag">Caffeine-free</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Cortado -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Cortado">
+                <!-- Cinnamon Tea -->
+                <div class="menu-item">
+                    <div class="menu-item-image">
+                        <img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=200&q=80" alt="Cinnamon Tea">
                     </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Cortado</h3>
-                        <p class="card-description">Equal parts espresso and steamed milk, creating a perfectly balanced drink.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">Mild</span>
-                            <span class="card-price">EGP 48</span>
+                    <div class="menu-item-content">
+                        <div class="menu-item-header">
+                            <h3 class="menu-item-title">Cinnamon Tea</h3>
+                            <span class="menu-item-price">35 EGP</span>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Cappuccino -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?auto=format&fit=crop&w=600&q=80" alt="Cappuccino">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Cappuccino</h3>
-                        <p class="card-description">Espresso with steamed milk and a thick layer of milk foam, dusted with cocoa.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">Creamy</span>
-                            <span class="card-price">EGP 50</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Flat White -->
-                <div class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1577968897966-3d4325b36b61?auto=format&fit=crop&w=600&q=80" alt="Flat White">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Flat White</h3>
-                        <p class="card-description">Silky microfoam poured over a double shot of espresso for a velvety texture.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">Silky</span>
-                            <span class="card-price">EGP 52</span>
+                        <p class="menu-item-description">Warm and spicy cinnamon-infused black tea. A comforting blend perfect for chilly evenings.</p>
+                        <div class="menu-item-tags">
+                            <span class="menu-item-tag">Spiced</span>
+                            <span class="menu-item-tag">Seasonal</span>
+                            <span class="menu-item-tag">Aromatic</span>
                         </div>
                     </div>
                 </div>
@@ -136,26 +127,22 @@
     </main>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav">
+    <nav class="mobile-nav">
         <a href="index.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🏠</span>
-            <span class="mobile-nav-label">Home</span>
+            <span>Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item active">
             <span class="mobile-nav-icon">🍽️</span>
-            <span class="mobile-nav-label">Menu</span>
+            <span>Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📸</span>
-            <span class="mobile-nav-label">Gallery</span>
-        </a>
-        <a href="rate-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Reviews</span>
+            <span>Gallery</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">📍</span>
-            <span class="mobile-nav-label">Contact</span>
+            <span class="mobile-nav-icon">📞</span>
+            <span>Contact</span>
         </a>
     </nav>
 
@@ -163,23 +150,68 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-icon">H</div>
-                    <span class="logo-text">Hona-Cairo</span>
-                </a>
-                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+                <div class="logo-icon">HQ</div>
+                <p>Experience the future of Egyptian cuisine. Where tradition meets innovation in every dish we serve.</p>
             </div>
             <div class="footer-links">
-                <a href="categories.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="rate-us.html">Reviews</a>
-                <a href="contact-us.html">Contact</a>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="categories.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="rate-us.html">Reviews</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+201234567890">+20 123 456 7890</a></li>
+                    <li><a href="mailto:info@honaqahera.com">info@honaqahera.com</a></li>
+                    <li>Cairo, Egypt</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+            <p>&copy; 2026 Hona-Qahera Restaurant. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const html = document.documentElement;
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeUI(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            }
+        }
+
+        if (!localStorage.getItem('theme')) {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = prefersDark ? 'dark' : 'light';
+            html.setAttribute('data-theme', theme);
+            updateThemeUI(theme);
+        }
+    </script>
 </body>
 </html>

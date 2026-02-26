@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rate Your Experience | Hona-Cairo Restaurant</title>
+    <title>Rate Us | Hona-Qahera Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Share your experience and rate Hona-Cairo Restaurant.">
-    <meta name="theme-color" content="#0a0f1a">
-    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Share your experience and rate Hona-Qahera Restaurant.">
+    <meta name="theme-color" content="#0f0a1a">
+    <meta name="color-scheme" content="dark light">
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+        <span class="theme-toggle-text" id="themeText">Dark</span>
+    </button>
 
     <!-- Sticky Header -->
     <header class="site-header">
         <a href="index.html" class="logo-container">
-            <div class="logo-icon">H</div>
-            <span class="logo-text">Hona-Cairo</span>
+            <div class="logo-icon">HQ</div>
+            <span class="logo-text">Hona<span>-Qahera</span></span>
         </a>
     </header>
 
@@ -26,7 +31,7 @@
             <nav class="breadcrumbs">
                 <a href="index.html">Home</a>
                 <span class="breadcrumbs-separator">›</span>
-                <span class="breadcrumbs-current">Reviews</span>
+                <span class="breadcrumbs-current">Rate Us</span>
             </nav>
 
             <!-- Section Header -->
@@ -37,110 +42,109 @@
             </div>
 
             <!-- Rating Form -->
-            <div class="form-container">
-                <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Thank you for your feedback! We appreciate your time.');">
-                    
+            <div class="container-narrow">
+                <form class="card" style="padding: var(--space-8);">
                     <!-- Star Rating -->
-                    <div class="form-group" style="text-align: center;">
-                        <label class="form-label" style="display: block; margin-bottom: 1rem;">How was your experience?</label>
-                        <div class="rating-stars" style="justify-content: center;">
-                            <input type="radio" id="star5" name="rating" value="5" required>
-                            <label for="star5" title="5 stars - Excellent">★</label>
-                            <input type="radio" id="star4" name="rating" value="4">
-                            <label for="star4" title="4 stars - Very Good">★</label>
-                            <input type="radio" id="star3" name="rating" value="3">
-                            <label for="star3" title="3 stars - Good">★</label>
-                            <input type="radio" id="star2" name="rating" value="2">
-                            <label for="star2" title="2 stars - Fair">★</label>
-                            <input type="radio" id="star1" name="rating" value="1">
-                            <label for="star1" title="1 star - Poor">★</label>
+                    <div class="form-group">
+                        <label class="form-label">How would you rate your experience? <span>*</span></label>
+                        <div class="rating-container">
+                            <span class="rating-star" data-rating="1">★</span>
+                            <span class="rating-star" data-rating="2">★</span>
+                            <span class="rating-star" data-rating="3">★</span>
+                            <span class="rating-star" data-rating="4">★</span>
+                            <span class="rating-star" data-rating="5">★</span>
                         </div>
+                        <input type="hidden" id="ratingValue" name="rating" required>
                     </div>
 
-                    <!-- Name Field -->
+                    <!-- Name -->
                     <div class="form-group">
-                        <label for="name" class="form-label">Your Name</label>
-                        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your name (optional)">
+                        <label for="name" class="form-label">Your Name <span>*</span></label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
                     </div>
 
-                    <!-- Email Field -->
+                    <!-- Email -->
                     <div class="form-group">
-                        <label for="email" class="form-label">Email Address</label>
-                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email (optional)">
+                        <label for="email" class="form-label">Email Address <span>*</span></label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email" required>
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone Number</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your phone number (optional)">
                     </div>
 
                     <!-- Visit Date -->
                     <div class="form-group">
-                        <label for="visit-date" class="form-label">Date of Visit</label>
-                        <input type="date" id="visit-date" name="visit_date" class="form-input">
+                        <label for="visitDate" class="form-label">Date of Visit</label>
+                        <input type="date" id="visitDate" name="visitDate" class="form-input">
                     </div>
 
-                    <!-- Feedback Type -->
+                    <!-- Category -->
                     <div class="form-group">
-                        <label for="feedback-type" class="form-label">What did you visit us for?</label>
-                        <select id="feedback-type" name="feedback_type" class="form-input">
+                        <label for="category" class="form-label">What did you enjoy most?</label>
+                        <select id="category" name="category" class="form-select">
                             <option value="">Select an option</option>
-                            <option value="dining">Dining</option>
-                            <option value="coffee">Coffee & Drinks</option>
-                            <option value="takeaway">Takeaway</option>
-                            <option value="event">Special Event</option>
-                            <option value="other">Other</option>
+                            <option value="food">Food Quality</option>
+                            <option value="service">Service</option>
+                            <option value="ambiance">Ambiance</option>
+                            <option value="value">Value for Money</option>
+                            <option value="all">Everything!</option>
                         </select>
                     </div>
 
-                    <!-- Comments -->
+                    <!-- Feedback -->
                     <div class="form-group">
-                        <label for="comments" class="form-label">Your Comments</label>
-                        <textarea id="comments" name="comments" class="form-input form-textarea" placeholder="Tell us about your experience... What did you enjoy? What could we improve?"></textarea>
+                        <label for="feedback" class="form-label">Your Feedback <span>*</span></label>
+                        <textarea id="feedback" name="feedback" class="form-textarea" placeholder="Tell us about your experience... What did you like? What can we improve?" required></textarea>
                     </div>
 
                     <!-- Recommend -->
-                    <div class="form-group" style="display: flex; align-items: center; gap: 0.75rem;">
-                        <input type="checkbox" id="recommend" name="recommend" style="width: 20px; height: 20px; accent-color: var(--brand-accent);">
-                        <label for="recommend" class="form-label" style="margin-bottom: 0;">I would recommend Hona-Cairo to friends and family</label>
+                    <div class="form-group">
+                        <label class="form-label">Would you recommend us to friends?</label>
+                        <div style="display: flex; gap: var(--space-6); margin-top: var(--space-3);">
+                            <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer; color: var(--text-secondary);">
+                                <input type="radio" name="recommend" value="yes" style="accent-color: var(--brand-accent);">
+                                <span>Definitely!</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer; color: var(--text-secondary);">
+                                <input type="radio" name="recommend" value="maybe" style="accent-color: var(--brand-accent);">
+                                <span>Maybe</span>
+                            </label>
+                            <label style="display: flex; align-items: center; gap: var(--space-2); cursor: pointer; color: var(--text-secondary);">
+                                <input type="radio" name="recommend" value="no" style="accent-color: var(--brand-accent);">
+                                <span>Not sure</span>
+                            </label>
+                        </div>
                     </div>
 
                     <!-- Submit Button -->
-                    <div class="form-group" style="margin-top: 2rem; text-align: center;">
-                        <button type="submit" class="btn btn-primary btn-lg" style="min-width: 200px;">
-                            Submit Review
-                        </button>
-                    </div>
-
+                    <button type="submit" class="btn btn-primary btn-lg" style="width: 100%;">
+                        Submit Review
+                    </button>
                 </form>
-            </div>
-
-            <!-- Trust Indicators -->
-            <div style="text-align: center; margin-top: 3rem; padding: 2rem; opacity: 0.7;">
-                <p style="font-size: var(--text-sm); color: var(--text-tertiary);">
-                    🔒 Your feedback is kept confidential and helps us improve our service.<br>
-                    We read every review and appreciate your honest opinion.
-                </p>
             </div>
         </section>
     </main>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav">
+    <nav class="mobile-nav">
         <a href="index.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🏠</span>
-            <span class="mobile-nav-label">Home</span>
+            <span>Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🍽️</span>
-            <span class="mobile-nav-label">Menu</span>
+            <span>Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📸</span>
-            <span class="mobile-nav-label">Gallery</span>
-        </a>
-        <a href="rate-us.html" class="mobile-nav-item active">
-            <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Reviews</span>
+            <span>Gallery</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">📍</span>
-            <span class="mobile-nav-label">Contact</span>
+            <span class="mobile-nav-icon">📞</span>
+            <span>Contact</span>
         </a>
     </nav>
 
@@ -148,23 +152,117 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-icon">H</div>
-                    <span class="logo-text">Hona-Cairo</span>
-                </a>
-                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+                <div class="logo-icon">HQ</div>
+                <p>Experience the future of Egyptian cuisine. Where tradition meets innovation in every dish we serve.</p>
             </div>
             <div class="footer-links">
-                <a href="categories.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="rate-us.html">Reviews</a>
-                <a href="contact-us.html">Contact</a>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="categories.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="rate-us.html">Reviews</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+201234567890">+20 123 456 7890</a></li>
+                    <li><a href="mailto:info@honaqahera.com">info@honaqahera.com</a></li>
+                    <li>Cairo, Egypt</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+            <p>&copy; 2026 Hona-Qahera Restaurant. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const html = document.documentElement;
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeUI(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            }
+        }
+
+        if (!localStorage.getItem('theme')) {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = prefersDark ? 'dark' : 'light';
+            html.setAttribute('data-theme', theme);
+            updateThemeUI(theme);
+        }
+
+        // Star Rating Interaction
+        const stars = document.querySelectorAll('.rating-star');
+        const ratingInput = document.getElementById('ratingValue');
+
+        stars.forEach(star => {
+            star.addEventListener('click', () => {
+                const rating = star.dataset.rating;
+                ratingInput.value = rating;
+                updateStars(rating);
+            });
+
+            star.addEventListener('mouseenter', () => {
+                const rating = star.dataset.rating;
+                previewStars(rating);
+            });
+        });
+
+        document.querySelector('.rating-container').addEventListener('mouseleave', () => {
+            updateStars(ratingInput.value);
+        });
+
+        function updateStars(rating) {
+            stars.forEach(star => {
+                const starRating = star.dataset.rating;
+                if (starRating <= rating) {
+                    star.classList.add('active');
+                } else {
+                    star.classList.remove('active');
+                }
+            });
+        }
+
+        function previewStars(rating) {
+            stars.forEach(star => {
+                const starRating = star.dataset.rating;
+                if (starRating <= rating) {
+                    star.style.color = 'var(--brand-accent)';
+                } else {
+                    star.style.color = 'var(--border-default)';
+                }
+            });
+        }
+
+        // Form Submission
+        document.querySelector('form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Thank you for your review! We appreciate your feedback.');
+        });
+    </script>
 </body>
 </html>

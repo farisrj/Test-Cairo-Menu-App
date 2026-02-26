@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us | Hona-Cairo Restaurant</title>
+    <title>Contact Us | Hona-Qahera Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Get in touch with Hona-Cairo Restaurant and find our location.">
-    <meta name="theme-color" content="#0a0f1a">
-    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Contact Hona-Qahera Restaurant for reservations and inquiries.">
+    <meta name="theme-color" content="#0f0a1a">
+    <meta name="color-scheme" content="dark light">
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+        <span class="theme-toggle-text" id="themeText">Dark</span>
+    </button>
 
     <!-- Sticky Header -->
     <header class="site-header">
         <a href="index.html" class="logo-container">
-            <div class="logo-icon">H</div>
-            <span class="logo-text">Hona-Cairo</span>
+            <div class="logo-icon">HQ</div>
+            <span class="logo-text">Hona<span>-Qahera</span></span>
         </a>
     </header>
 
@@ -26,125 +31,86 @@
             <nav class="breadcrumbs">
                 <a href="index.html">Home</a>
                 <span class="breadcrumbs-separator">›</span>
-                <span class="breadcrumbs-current">Contact Us</span>
+                <span class="breadcrumbs-current">Contact</span>
             </nav>
 
             <!-- Section Header -->
             <div class="section-header">
-                <span class="section-subtitle">Get In Touch</span>
+                <span class="section-subtitle">Get in Touch</span>
                 <h1 class="section-title">Contact Us</h1>
-                <p class="section-description">We'd love to hear from you. Visit us or reach out using the information below.</p>
+                <p class="section-description">We'd love to hear from you. Reach out for reservations, inquiries, or just to say hello.</p>
             </div>
 
-            <!-- Map Container -->
-            <div class="map-container mb-8">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3453.663254216227!2d31.233334!3d30.044420!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x145840c60a000001%3A0x1000000000000000!2sCairo%2C%20Egypt!5e0!3m2!1sen!2sus!4v1600000000000!5m2!1sen!2sus" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-
-            <!-- Contact Information Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-3">
-                <!-- Address -->
-                <div class="card" style="text-align: center;">
-                    <div class="card-content">
-                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📍</div>
-                        <h3 class="card-title">Address</h3>
-                        <p class="card-description">
-                            123 Nile Corniche<br>
-                            Downtown Cairo<br>
-                            Cairo Governorate, Egypt
-                        </p>
-                    </div>
-                </div>
-
+            <!-- Contact Cards Grid -->
+            <div class="contact-grid">
                 <!-- Phone -->
-                <div class="card" style="text-align: center;">
-                    <div class="card-content">
-                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">📞</div>
-                        <h3 class="card-title">Phone</h3>
-                        <p class="card-description">
-                            <a href="tel:+201234567890">+20 12 3456 7890</a><br>
-                            <a href="tel:+2021234567">+20 2 123 4567</a>
-                        </p>
-                    </div>
-                </div>
+                <a href="tel:+201234567890" class="contact-card">
+                    <div class="contact-icon">📞</div>
+                    <h3 class="contact-title">Phone</h3>
+                    <p class="contact-info">+20 123 456 7890</p>
+                    <p class="contact-info">+20 123 456 7891</p>
+                </a>
 
                 <!-- Email -->
-                <div class="card" style="text-align: center;">
-                    <div class="card-content">
-                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">✉️</div>
-                        <h3 class="card-title">Email</h3>
-                        <p class="card-description">
-                            <a href="mailto:info@honacairo.com">info@honacairo.com</a><br>
-                            <a href="mailto:reservations@honacairo.com">reservations@honacairo.com</a>
-                        </p>
-                    </div>
+                <a href="mailto:info@honaqahera.com" class="contact-card">
+                    <div class="contact-icon">✉️</div>
+                    <h3 class="contact-title">Email</h3>
+                    <p class="contact-info">info@honaqahera.com</p>
+                    <p class="contact-info">reservations@honaqahera.com</p>
+                </a>
+
+                <!-- Address -->
+                <div class="contact-card">
+                    <div class="contact-icon">📍</div>
+                    <h3 class="contact-title">Location</h3>
+                    <p class="contact-info">123 Nile Corniche</p>
+                    <p class="contact-info">Cairo, Egypt</p>
                 </div>
 
                 <!-- Hours -->
-                <div class="card" style="text-align: center;">
-                    <div class="card-content">
-                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🕒</div>
-                        <h3 class="card-title">Opening Hours</h3>
-                        <p class="card-description">
-                            Daily: 8:00 AM - 11:00 PM<br>
-                            Friday: 1:00 PM - 12:00 AM
-                        </p>
-                    </div>
+                <div class="contact-card">
+                    <div class="contact-icon">🕒</div>
+                    <h3 class="contact-title">Opening Hours</h3>
+                    <p class="contact-info">Daily: 10 AM - 2 AM</p>
+                    <p class="contact-info">Kitchen: 12 PM - 12 AM</p>
                 </div>
 
-                <!-- Reservations -->
-                <div class="card" style="text-align: center;">
-                    <div class="card-content">
-                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🍽️</div>
-                        <h3 class="card-title">Reservations</h3>
-                        <p class="card-description">
-                            Book your table online<br>
-                            or call us directly
-                        </p>
-                    </div>
-                </div>
+                <!-- WhatsApp -->
+                <a href="https://wa.me/201234567890" target="_blank" class="contact-card">
+                    <div class="contact-icon">💬</div>
+                    <h3 class="contact-title">WhatsApp</h3>
+                    <p class="contact-info">+20 123 456 7890</p>
+                    <p class="contact-info">Quick Response Guaranteed</p>
+                </a>
 
-                <!-- Social -->
-                <div class="card" style="text-align: center;">
-                    <div class="card-content">
-                        <div style="font-size: 2.5rem; margin-bottom: 1rem;">🌐</div>
-                        <h3 class="card-title">Follow Us</h3>
-                        <p class="card-description">
-                            @honacairo on all platforms<br>
-                            Instagram, Facebook, Twitter
-                        </p>
-                    </div>
+                <!-- Social Media -->
+                <div class="contact-card">
+                    <div class="contact-icon">📱</div>
+                    <h3 class="contact-title">Follow Us</h3>
+                    <p class="contact-info">@honaqahera</p>
+                    <p class="contact-info">Facebook & Instagram</p>
                 </div>
             </div>
         </section>
     </main>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav">
+    <nav class="mobile-nav">
         <a href="index.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🏠</span>
-            <span class="mobile-nav-label">Home</span>
+            <span>Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🍽️</span>
-            <span class="mobile-nav-label">Menu</span>
+            <span>Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📸</span>
-            <span class="mobile-nav-label">Gallery</span>
-        </a>
-        <a href="rate-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Reviews</span>
+            <span>Gallery</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item active">
-            <span class="mobile-nav-icon">📍</span>
-            <span class="mobile-nav-label">Contact</span>
+            <span class="mobile-nav-icon">📞</span>
+            <span>Contact</span>
         </a>
     </nav>
 
@@ -152,23 +118,68 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-icon">H</div>
-                    <span class="logo-text">Hona-Cairo</span>
-                </a>
-                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+                <div class="logo-icon">HQ</div>
+                <p>Experience the future of Egyptian cuisine. Where tradition meets innovation in every dish we serve.</p>
             </div>
             <div class="footer-links">
-                <a href="categories.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="rate-us.html">Reviews</a>
-                <a href="contact-us.html">Contact</a>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="categories.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="rate-us.html">Reviews</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+201234567890">+20 123 456 7890</a></li>
+                    <li><a href="mailto:info@honaqahera.com">info@honaqahera.com</a></li>
+                    <li>Cairo, Egypt</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+            <p>&copy; 2026 Hona-Qahera Restaurant. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const html = document.documentElement;
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeUI(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            }
+        }
+
+        if (!localStorage.getItem('theme')) {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = prefersDark ? 'dark' : 'light';
+            html.setAttribute('data-theme', theme);
+            updateThemeUI(theme);
+        }
+    </script>
 </body>
 </html>

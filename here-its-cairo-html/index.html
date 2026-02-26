@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hona-Cairo Restaurant | Authentic Egyptian Cuisine</title>
+    <title>Hona-Qahera Restaurant | Premium Egyptian Cuisine</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Experience authentic Egyptian cuisine and rich cultural heritage at Hona-Cairo Restaurant.">
-    <meta name="theme-color" content="#0a0f1a">
-    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Experience authentic Egyptian cuisine with a modern twist at Hona-Qahera Restaurant.">
+    <meta name="theme-color" content="#0f0a1a">
+    <meta name="color-scheme" content="dark light">
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+        <span class="theme-toggle-text" id="themeText">Dark</span>
+    </button>
 
     <!-- Sticky Header with Glassmorphism -->
     <header class="site-header">
         <a href="index.html" class="logo-container">
-            <div class="logo-icon">H</div>
-            <span class="logo-text">Hona-Cairo</span>
+            <div class="logo-icon">HQ</div>
+            <span class="logo-text">Hona<span>-Qahera</span></span>
         </a>
     </header>
 
@@ -23,15 +28,12 @@
     <main class="main-content">
         <!-- Hero Section -->
         <section class="hero">
-            <video autoplay loop muted playsinline class="hero-video">
-                <source src="placeholder-video.mp4" type="video/mp4">
-                <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="Restaurant Ambiance">
-            </video>
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1920&q=80" alt="Hona-Qahera Restaurant Ambiance" class="hero-video">
             
             <div class="hero-content">
-                <div class="hero-badge">✦ Fine Dining Experience</div>
-                <h1>Taste the Spirit<br>of Egypt</h1>
-                <p>Immerse yourself in authentic Egyptian flavors where ancient culinary traditions meet contemporary elegance. Every dish tells a story.</p>
+                <div class="hero-badge">✦ Premium Dining Experience</div>
+                <h1>Taste the Future<br>of Egypt</h1>
+                <p>Where ancient Egyptian culinary traditions meet futuristic innovation. Experience flavors that transcend time at Hona-Qahera.</p>
                 <div class="hero-cta">
                     <a href="categories.html" class="btn btn-primary btn-lg">Explore Menu</a>
                     <a href="contact-us.html" class="btn btn-secondary btn-lg">Reserve Table</a>
@@ -44,18 +46,19 @@
             <div class="section-header">
                 <span class="section-subtitle">Discover</span>
                 <h2 class="section-title">What We Offer</h2>
-                <p class="section-description">From traditional Egyptian classics to modern interpretations, experience our culinary artistry.</p>
+                <p class="section-description">From traditional Egyptian classics to modern fusion creations, discover our culinary artistry.</p>
             </div>
             
             <div class="grid grid-cols-2 md:grid-cols-4">
                 <!-- Menu Card -->
                 <a href="categories.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Our Menu">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=600&q=80" alt="Our Menu - Gourmet Burgers and Dishes">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Our Menu</h3>
-                        <p class="card-description">Authentic Egyptian dishes crafted with passion and tradition.</p>
+                        <p class="card-description">Authentic Egyptian dishes crafted with passion and modern innovation.</p>
                         <div class="card-meta">
                             <span class="card-tag">40+ Items</span>
                             <span class="text-brand">→</span>
@@ -66,11 +69,12 @@
                 <!-- Gallery Card -->
                 <a href="gallery.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Gallery">
+                        <img src="https://images.unsplash.com/photo-1559329007-40df8a9345d8?auto=format&fit=crop&w=600&q=80" alt="Restaurant Gallery - Fine Dining Atmosphere">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Gallery</h3>
-                        <p class="card-description">Experience the ambiance and aesthetic of our restaurant.</p>
+                        <p class="card-description">Experience the ambiance and futuristic aesthetic of our restaurant.</p>
                         <div class="card-meta">
                             <span class="card-tag">Photos</span>
                             <span class="text-brand">→</span>
@@ -81,7 +85,8 @@
                 <!-- Reviews Card -->
                 <a href="rate-us.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1516414447565-b14be0adf13e?auto=format&fit=crop&w=600&q=80" alt="Reviews">
+                        <img src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=600&q=80" alt="Customer Reviews - Coffee and Feedback">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Reviews</h3>
@@ -96,13 +101,14 @@
                 <!-- Contact Card -->
                 <a href="contact-us.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=600&q=80" alt="Contact">
+                        <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=600&q=80" alt="Contact Us - Mobile Communication">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Contact</h3>
-                        <p class="card-description">Find our location and get in touch with our team.</p>
+                        <p class="card-description">Get in touch with us for reservations and inquiries.</p>
                         <div class="card-meta">
-                            <span class="card-tag">Visit Us</span>
+                            <span class="card-tag">Connect</span>
                             <span class="text-brand">→</span>
                         </div>
                     </div>
@@ -112,26 +118,22 @@
     </main>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav">
+    <nav class="mobile-nav">
         <a href="index.html" class="mobile-nav-item active">
             <span class="mobile-nav-icon">🏠</span>
-            <span class="mobile-nav-label">Home</span>
+            <span>Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🍽️</span>
-            <span class="mobile-nav-label">Menu</span>
+            <span>Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📸</span>
-            <span class="mobile-nav-label">Gallery</span>
-        </a>
-        <a href="rate-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Reviews</span>
+            <span>Gallery</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">📍</span>
-            <span class="mobile-nav-label">Contact</span>
+            <span class="mobile-nav-icon">📞</span>
+            <span>Contact</span>
         </a>
     </nav>
 
@@ -139,23 +141,73 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-icon">H</div>
-                    <span class="logo-text">Hona-Cairo</span>
-                </a>
-                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance. Where every meal becomes a memorable journey.</p>
+                <div class="logo-icon">HQ</div>
+                <p>Experience the future of Egyptian cuisine. Where tradition meets innovation in every dish we serve.</p>
             </div>
             <div class="footer-links">
-                <a href="categories.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="rate-us.html">Reviews</a>
-                <a href="contact-us.html">Contact</a>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="categories.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="rate-us.html">Reviews</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+201234567890">+20 123 456 7890</a></li>
+                    <li><a href="mailto:info@honaqahera.com">info@honaqahera.com</a></li>
+                    <li>Cairo, Egypt</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+            <p>&copy; 2026 Hona-Qahera Restaurant. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        // Theme toggle functionality
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to dark
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeUI(currentTheme);
+
+        // Toggle theme on button click
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        // Update UI based on theme
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            }
+        }
+
+        // Check system preference on load if no saved preference
+        if (!localStorage.getItem('theme')) {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = prefersDark ? 'dark' : 'light';
+            html.setAttribute('data-theme', theme);
+            updateThemeUI(theme);
+        }
+    </script>
 </body>
 </html>

@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hot Beverages | Hona-Cairo Restaurant</title>
+    <title>Hot Beverages | Hona-Qahera Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Explore the subcategories of Hot Beverages at Hona-Cairo Restaurant.">
-    <meta name="theme-color" content="#0a0f1a">
-    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Explore hot beverages at Hona-Qahera Restaurant.">
+    <meta name="theme-color" content="#0f0a1a">
+    <meta name="color-scheme" content="dark light">
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+        <span class="theme-toggle-text" id="themeText">Dark</span>
+    </button>
 
     <!-- Sticky Header -->
     <header class="site-header">
         <a href="index.html" class="logo-container">
-            <div class="logo-icon">H</div>
-            <span class="logo-text">Hona-Cairo</span>
+            <div class="logo-icon">HQ</div>
+            <span class="logo-text">Hona<span>-Qahera</span></span>
         </a>
     </header>
 
@@ -33,38 +38,40 @@
 
             <!-- Section Header -->
             <div class="section-header">
-                <span class="section-subtitle">Menu</span>
-                <h1 class="section-title">Hot Beverages</h1>
-                <p class="section-description">Warm, comforting drinks crafted with authentic Egyptian tradition.</p>
+                <span class="section-subtitle">Hot Beverages</span>
+                <h1 class="section-title">Choose Your Drink</h1>
+                <p class="section-description">Warm your soul with our selection of traditional and modern hot beverages.</p>
             </div>
 
             <!-- Subcategories Grid -->
-            <div class="grid grid-cols-2 md:grid-cols-4">
-                <!-- Traditional Coffee -->
+            <div class="grid grid-cols-2 md:grid-cols-3">
+                <!-- Traditional Tea -->
                 <a href="menu-items.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?auto=format&fit=crop&w=600&q=80" alt="Traditional Coffee">
+                        <img src="https://images.unsplash.com/photo-1597481499750-3e6b22637e12?auto=format&fit=crop&w=600&q=80" alt="Traditional Tea - Egyptian Black Tea">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Traditional Coffee</h3>
-                        <p class="card-description">Rich, dark roasted coffee brewed to perfection using centuries-old methods.</p>
+                        <h3 class="card-title">Traditional Tea</h3>
+                        <p class="card-description">Authentic Egyptian black tea with fresh mint.</p>
                         <div class="card-meta">
-                            <span class="card-tag">6 Items</span>
+                            <span class="card-tag">4 Items</span>
                             <span class="text-brand">→</span>
                         </div>
                     </div>
                 </a>
 
-                <!-- Egyptian Teas -->
+                <!-- Specialty Coffee -->
                 <a href="menu-items.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Egyptian Teas">
+                        <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80" alt="Specialty Coffee - Artisan Coffee">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Egyptian Teas</h3>
-                        <p class="card-description">Classic black teas, aromatic blends, and traditional tea ceremonies.</p>
+                        <h3 class="card-title">Specialty Coffee</h3>
+                        <p class="card-description">Arabic coffee, Turkish coffee, and espresso drinks.</p>
                         <div class="card-meta">
-                            <span class="card-tag">8 Items</span>
+                            <span class="card-tag">5 Items</span>
                             <span class="text-brand">→</span>
                         </div>
                     </div>
@@ -73,28 +80,14 @@
                 <!-- Herbal Infusions -->
                 <a href="menu-items.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=600&q=80" alt="Herbal Infusions">
+                        <img src="https://images.unsplash.com/photo-1594631252845-29fc4cc8cde9?auto=format&fit=crop&w=600&q=80" alt="Herbal Infusions - Chamomile Tea">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Herbal Infusions</h3>
-                        <p class="card-description">Soothing chamomile, refreshing hibiscus, and cooling mint infusions.</p>
+                        <p class="card-description">Chamomile, hibiscus, and anise herbal teas.</p>
                         <div class="card-meta">
-                            <span class="card-tag">10 Items</span>
-                            <span class="text-brand">→</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Specialty Lattes -->
-                <a href="menu-items.html" class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&w=600&q=80" alt="Specialty Lattes">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Specialty Lattes</h3>
-                        <p class="card-description">Creamy espresso-based drinks with unique Egyptian-inspired flavors.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">5 Items</span>
+                            <span class="card-tag">3 Items</span>
                             <span class="text-brand">→</span>
                         </div>
                     </div>
@@ -104,26 +97,22 @@
     </main>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav">
+    <nav class="mobile-nav">
         <a href="index.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🏠</span>
-            <span class="mobile-nav-label">Home</span>
+            <span>Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item active">
             <span class="mobile-nav-icon">🍽️</span>
-            <span class="mobile-nav-label">Menu</span>
+            <span>Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📸</span>
-            <span class="mobile-nav-label">Gallery</span>
-        </a>
-        <a href="rate-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Reviews</span>
+            <span>Gallery</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">📍</span>
-            <span class="mobile-nav-label">Contact</span>
+            <span class="mobile-nav-icon">📞</span>
+            <span>Contact</span>
         </a>
     </nav>
 
@@ -131,23 +120,68 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-icon">H</div>
-                    <span class="logo-text">Hona-Cairo</span>
-                </a>
-                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+                <div class="logo-icon">HQ</div>
+                <p>Experience the future of Egyptian cuisine. Where tradition meets innovation in every dish we serve.</p>
             </div>
             <div class="footer-links">
-                <a href="categories.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="rate-us.html">Reviews</a>
-                <a href="contact-us.html">Contact</a>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="categories.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="rate-us.html">Reviews</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+201234567890">+20 123 456 7890</a></li>
+                    <li><a href="mailto:info@honaqahera.com">info@honaqahera.com</a></li>
+                    <li>Cairo, Egypt</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+            <p>&copy; 2026 Hona-Qahera Restaurant. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const html = document.documentElement;
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeUI(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            }
+        }
+
+        if (!localStorage.getItem('theme')) {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = prefersDark ? 'dark' : 'light';
+            html.setAttribute('data-theme', theme);
+            updateThemeUI(theme);
+        }
+    </script>
 </body>
 </html>

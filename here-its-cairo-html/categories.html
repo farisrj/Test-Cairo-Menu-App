@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu Categories | Hona-Cairo Restaurant</title>
+    <title>Menu Categories | Hona-Qahera Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
-    <meta name="description" content="Explore our menu categories at Hona-Cairo Restaurant.">
-    <meta name="theme-color" content="#0a0f1a">
-    <meta name="color-scheme" content="dark">
+    <meta name="description" content="Explore our menu categories at Hona-Qahera Restaurant.">
+    <meta name="theme-color" content="#0f0a1a">
+    <meta name="color-scheme" content="dark light">
 </head>
 <body>
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <span class="theme-toggle-icon" id="themeIcon">🌙</span>
+        <span class="theme-toggle-text" id="themeText">Dark</span>
+    </button>
 
     <!-- Sticky Header -->
     <header class="site-header">
         <a href="index.html" class="logo-container">
-            <div class="logo-icon">H</div>
-            <span class="logo-text">Hona-Cairo</span>
+            <div class="logo-icon">HQ</div>
+            <span class="logo-text">Hona<span>-Qahera</span></span>
         </a>
     </header>
 
@@ -41,7 +46,8 @@
                 <!-- Hot Beverages -->
                 <a href="subcategories.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=600&q=80" alt="Hot Beverages">
+                        <img src="https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80" alt="Hot Beverages - Traditional Egyptian Tea">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Hot Beverages</h3>
@@ -53,61 +59,17 @@
                     </div>
                 </a>
 
-                <!-- Cold Refreshments -->
+                <!-- Cold Beverages -->
                 <a href="subcategories.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1497935586351-b67a49e012bf?auto=format&fit=crop&w=600&q=80" alt="Cold Refreshments">
+                        <img src="https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80" alt="Cold Beverages - Fresh Juices">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Cold Refreshments</h3>
-                        <p class="card-description">Fresh juices, iced beverages, and signature cooling drinks.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">8 Items</span>
-                            <span class="text-brand">→</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Authentic Desserts -->
-                <a href="subcategories.html" class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1551024601-bec78aea704b?auto=format&fit=crop&w=600&q=80" alt="Authentic Desserts">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Authentic Desserts</h3>
-                        <p class="card-description">Sweet delights inspired by centuries-old Egyptian recipes.</p>
+                        <h3 class="card-title">Cold Beverages</h3>
+                        <p class="card-description">Refreshing fresh juices, smoothies, and Egyptian hibiscus drinks.</p>
                         <div class="card-meta">
                             <span class="card-tag">15 Items</span>
-                            <span class="text-brand">→</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Fresh Pastries -->
-                <a href="subcategories.html" class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80" alt="Fresh Pastries">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Fresh Pastries</h3>
-                        <p class="card-description">Oven-fresh baked goods, perfect companions to your drink.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">10 Items</span>
-                            <span class="text-brand">→</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Main Dishes -->
-                <a href="subcategories.html" class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1563379926898-05f4575a45d8?auto=format&fit=crop&w=600&q=80" alt="Main Dishes">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Main Dishes</h3>
-                        <p class="card-description">Hearty Egyptian classics from koshary to tagines.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">18 Items</span>
                             <span class="text-brand">→</span>
                         </div>
                     </div>
@@ -116,11 +78,76 @@
                 <!-- Appetizers -->
                 <a href="subcategories.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1600336153113-d62c9596daaa?auto=format&fit=crop&w=600&q=80" alt="Appetizers">
+                        <img src="https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=600&q=80" alt="Appetizers - Egyptian Mezze">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
                         <h3 class="card-title">Appetizers</h3>
-                        <p class="card-description">Start your meal with our selection of mezze and starters.</p>
+                        <p class="card-description">Authentic mezze platters, dips, and starters to begin your meal.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">18 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Main Courses -->
+                <a href="subcategories.html" class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1541518763669-27fef04b14ea?auto=format&fit=crop&w=600&q=80" alt="Main Courses - Grilled Meats">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Main Courses</h3>
+                        <p class="card-description">Grilled meats, traditional stews, and signature Egyptian dishes.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">24 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Seafood -->
+                <a href="subcategories.html" class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1579631542720-3a87824fff86?auto=format&fit=crop&w=600&q=80" alt="Seafood - Fresh Grilled Fish">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Seafood</h3>
+                        <p class="card-description">Fresh Mediterranean seafood prepared with Egyptian spices.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">10 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Vegetarian -->
+                <a href="subcategories.html" class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" alt="Vegetarian - Fresh Vegetable Dishes">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Vegetarian</h3>
+                        <p class="card-description">Plant-based delights featuring fresh vegetables and legumes.</p>
+                        <div class="card-meta">
+                            <span class="card-tag">16 Items</span>
+                            <span class="text-brand">→</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Desserts -->
+                <a href="subcategories.html" class="card">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=600&q=80" alt="Desserts - Egyptian Sweets">
+                        <div class="card-image-overlay"></div>
+                    </div>
+                    <div class="card-content">
+                        <h3 class="card-title">Desserts</h3>
+                        <p class="card-description">Traditional Egyptian sweets, baklava, and modern dessert creations.</p>
                         <div class="card-meta">
                             <span class="card-tag">14 Items</span>
                             <span class="text-brand">→</span>
@@ -128,31 +155,17 @@
                     </div>
                 </a>
 
-                <!-- Soups & Salads -->
+                <!-- Shisha -->
                 <a href="subcategories.html" class="card">
                     <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1547592166-23ac45744acd?auto=format&fit=crop&w=600&q=80" alt="Soups & Salads">
+                        <img src="https://images.unsplash.com/photo-1598556776374-0a373878255c?auto=format&fit=crop&w=600&q=80" alt="Shisha - Hookah Lounge">
+                        <div class="card-image-overlay"></div>
                     </div>
                     <div class="card-content">
-                        <h3 class="card-title">Soups & Salads</h3>
-                        <p class="card-description">Fresh, healthy options with Egyptian-inspired flavors.</p>
+                        <h3 class="card-title">Shisha</h3>
+                        <p class="card-description">Premium hookah flavors in a relaxed, sophisticated atmosphere.</p>
                         <div class="card-meta">
-                            <span class="card-tag">9 Items</span>
-                            <span class="text-brand">→</span>
-                        </div>
-                    </div>
-                </a>
-
-                <!-- Specials -->
-                <a href="subcategories.html" class="card">
-                    <div class="card-image">
-                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=600&q=80" alt="Chef's Specials">
-                    </div>
-                    <div class="card-content">
-                        <h3 class="card-title">Chef's Specials</h3>
-                        <p class="card-description">Signature dishes crafted by our master chefs.</p>
-                        <div class="card-meta">
-                            <span class="card-tag">6 Items</span>
+                            <span class="card-tag">20 Flavors</span>
                             <span class="text-brand">→</span>
                         </div>
                     </div>
@@ -162,26 +175,22 @@
     </main>
 
     <!-- Mobile Bottom Navigation -->
-    <nav class="mobile-bottom-nav">
+    <nav class="mobile-nav">
         <a href="index.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">🏠</span>
-            <span class="mobile-nav-label">Home</span>
+            <span>Home</span>
         </a>
         <a href="categories.html" class="mobile-nav-item active">
             <span class="mobile-nav-icon">🍽️</span>
-            <span class="mobile-nav-label">Menu</span>
+            <span>Menu</span>
         </a>
         <a href="gallery.html" class="mobile-nav-item">
             <span class="mobile-nav-icon">📸</span>
-            <span class="mobile-nav-label">Gallery</span>
-        </a>
-        <a href="rate-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">⭐</span>
-            <span class="mobile-nav-label">Reviews</span>
+            <span>Gallery</span>
         </a>
         <a href="contact-us.html" class="mobile-nav-item">
-            <span class="mobile-nav-icon">📍</span>
-            <span class="mobile-nav-label">Contact</span>
+            <span class="mobile-nav-icon">📞</span>
+            <span>Contact</span>
         </a>
     </nav>
 
@@ -189,23 +198,68 @@
     <footer class="site-footer">
         <div class="footer-content">
             <div class="footer-brand">
-                <a href="index.html" class="logo-container">
-                    <div class="logo-icon">H</div>
-                    <span class="logo-text">Hona-Cairo</span>
-                </a>
-                <p class="footer-description">Authentic Egyptian cuisine in an atmosphere of timeless elegance.</p>
+                <div class="logo-icon">HQ</div>
+                <p>Experience the future of Egyptian cuisine. Where tradition meets innovation in every dish we serve.</p>
             </div>
             <div class="footer-links">
-                <a href="categories.html">Menu</a>
-                <a href="gallery.html">Gallery</a>
-                <a href="rate-us.html">Reviews</a>
-                <a href="contact-us.html">Contact</a>
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="categories.html">Menu</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="rate-us.html">Reviews</a></li>
+                    <li><a href="contact-us.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h4>Contact</h4>
+                <ul>
+                    <li><a href="tel:+201234567890">+20 123 456 7890</a></li>
+                    <li><a href="mailto:info@honaqahera.com">info@honaqahera.com</a></li>
+                    <li>Cairo, Egypt</li>
+                </ul>
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2024 Hona-Cairo Restaurant. All rights reserved.</p>
+            <p>&copy; 2026 Hona-Qahera Restaurant. All rights reserved.</p>
         </div>
     </footer>
 
+    <!-- Theme Toggle JavaScript -->
+    <script>
+        const themeToggle = document.getElementById('themeToggle');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const html = document.documentElement;
+
+        const currentTheme = localStorage.getItem('theme') || 'dark';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeUI(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeUI(newTheme);
+        });
+
+        function updateThemeUI(theme) {
+            if (theme === 'dark') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark';
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light';
+            }
+        }
+
+        if (!localStorage.getItem('theme')) {
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            const theme = prefersDark ? 'dark' : 'light';
+            html.setAttribute('data-theme', theme);
+            updateThemeUI(theme);
+        }
+    </script>
 </body>
 </html>
