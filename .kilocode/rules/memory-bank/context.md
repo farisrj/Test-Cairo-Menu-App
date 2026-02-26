@@ -3,9 +3,9 @@
 ## Current State
 
 **Template Status**: ✅ Ready for development
-**Hona-Cairo HTML App**: ✅ Completely revamped with multi-tenancy design system
+**Hona-Qahera HTML App**: ✅ Complete redesign with dual-mode light/dark theme
 
-The Hona-Cairo restaurant HTML5 app has been completely redesigned with a sophisticated, multi-tenancy-ready design system featuring modern CSS architecture, glassmorphism effects, and comprehensive theming support.
+The Hona-Qahera (formerly Hona-Cairo) restaurant HTML5 app has been completely redesigned with a futuristic dual-theme system, featuring both light and dark modes, vibrant brand colors, and real imagery throughout.
 
 ## Recently Completed
 
@@ -22,45 +22,59 @@ The Hona-Cairo restaurant HTML5 app has been completely redesigned with a sophis
   - Modern typography system (Plus Jakarta Sans, Inter, Space Grotesk)
   - Enhanced mobile-first responsive design
   - Improved accessibility with reduced-motion support
+- [x] **Hona-Qahera redesign with dual-mode light/dark theme**
+  - Complete CSS rewrite with data-theme attribute switching
+  - Dark mode: Deep purple (#0f0a1a) base with cyan/pink accents
+  - Light mode: Soft lavender (#faf8ff) base with same accent palette
+  - Theme toggle button with localStorage persistence
+  - Rebranding from Hona-Cairo to Hona-Qahera with HQ logo
+  - Real Unsplash images for all categories, subcategories, and menu items
+  - JavaScript theme switching with system preference detection
 
-## Hona-Cairo Redesign Details
+## Hona-Qahera Redesign Details
 
 ### Design System
-- **Theme**: Dark futuristic with glassmorphism & neumorphism effects
-- **Primary Color**: Deep navy `#0f172a` (brand primary)
-- **Accent Color**: Amber/gold `#f59e0b` (brand accent)
-- **Background**: Rich dark `#0a0f1a` with animated gradient mesh overlay
+- **Theme**: Dual-mode light/dark with futuristic aesthetics
+- **Primary Color (Dark)**: Deep purple `#7c3aed` with `#0f0a1a` background
+- **Primary Color (Light)**: Purple `#6d28d9` with `#faf8ff` background
+- **Accent Color**: Cyan `#06b6d4` (neon futuristic vibe)
+- **Secondary Color**: Pink `#ec4899` (gradient accents)
+- **Background**: Animated gradient mesh with grid overlay
 - **Typography**: Plus Jakarta Sans (display) + Inter (body) + Space Grotesk (accent)
-- **Cards**: Elevated surfaces with border glow on hover, gold top accent line
+- **Cards**: Glassmorphism with gradient top border on hover
 - **Header**: Sticky glassmorphism with backdrop blur
-- **Buttons**: Pill-shaped with shimmer effect, spring animations
-- **Animations**: Fade-in-up for cards, shimmer on buttons, float on gallery
+- **Buttons**: Pill-shaped with shimmer effect and gradient backgrounds
+- **Animations**: Fade-in-up for cards, shimmer on buttons, grid float animation
 
-### Multi-Tenancy Architecture
-The CSS is now organized for easy rebranding:
+### Dual Theme Architecture
+CSS uses `data-theme` attribute for seamless switching:
 
 ```css
-/* ═════════════════════════════════════════════════════════════════════════════
-   THEME CONFIGURATION — Multi-Tenancy Brand Variables
-   Modify these values to instantly rebrand for any restaurant
-   ═════════════════════════════════════════════════════════════════════════════ */
+/* Default/Dark Mode */
+:root, [data-theme="dark"] {
+  --brand-primary: #7c3aed;
+  --brand-accent: #06b6d4;
+  --brand-secondary: #ec4899;
+  --bg-body: #0f0a1a;
+  --text-primary: #faf5ff;
+}
 
-:root {
-  /* Brand Identity — Change these for new restaurants */
-  --brand-primary: #0f172a;
-  --brand-accent: #f59e0b;
-  --brand-secondary: #92400e;
-  
-  /* Semantic Colors — Maps brand to functional names */
-  --bg-body: #0a0f1a;
-  --text-primary: #f8fafc;
-  --border-default: rgba(148, 163, 184, 0.15);
-  
-  /* Typography */
-  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
-  --font-body: 'Inter', system-ui, sans-serif;
+/* Light Mode */
+[data-theme="light"] {
+  --brand-primary: #6d28d9;
+  --brand-accent: #0891b2;
+  --brand-secondary: #db2777;
+  --bg-body: #faf8ff;
+  --text-primary: #1a0b2e;
 }
 ```
+
+### Theme Toggle Implementation
+- Fixed position button at top-right of each page
+- Sun/Moon icon with "Light" / "Dark" text
+- localStorage persistence for user preference
+- System preference detection as fallback
+- Smooth CSS transitions between themes
 
 ### Files Modified
 | File | Changes |
@@ -95,12 +109,21 @@ The CSS is now organized for easy rebranding:
 
 ## Current Focus
 
-The Here-Its-Cairo HTML app has been redesigned with a modern futuristic look. Possible next steps:
+The Hona-Qahera HTML app has been completely redesigned with a dual-mode light/dark theme system featuring futuristic styling. The redesign includes:
 
-1. Add actual brand logo image to replace the "H" placeholder
-2. Add actual hero video/image assets
-3. Add more menu categories and items
-4. Consider converting to Next.js app for dynamic features
+- ✅ Theme toggle with localStorage persistence
+- ✅ Real Unsplash images throughout
+- ✅ Purple/cyan/pink futuristic color palette
+- ✅ Glassmorphism effects on both themes
+- ✅ Responsive design for all devices
+
+Possible next steps:
+
+1. Add actual brand logo image to replace the "HQ" placeholder
+2. Add more menu categories and items
+3. Consider converting to Next.js app for dynamic features
+4. Add online ordering functionality
+5. Implement reservation booking system
 
 ## Quick Start Guide
 
@@ -161,3 +184,4 @@ export async function GET() {
 | 2026-02-25 | Hero section with video background added |
 | 2026-02-25 | Complete redesign with modern futuristic dark theme (glassmorphism, dark mode, new fonts, animations) |
 | 2026-02-25 | Multi-tenancy design system revamp (CSS architecture, neumorphism, brand identity, mobile-first) |
+| 2026-02-26 | Hona-Qahera dual-mode redesign with light/dark theme toggle, futuristic purple/cyan/pink palette, real Unsplash images |
