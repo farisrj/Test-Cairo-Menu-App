@@ -3,7 +3,7 @@
 ## Current State
 
 **Template Status**: ✅ Ready for development
-**Hona-Qahera HTML App**: ✅ Complete redesign with dual-mode light/dark theme
+**Hona-Qahera HTML App**: ✅ Complete redesign with dual-mode light/dark theme + cultural corner decorations on inner pages
 
 The Hona-Qahera (formerly Hona-Cairo) restaurant HTML5 app has been completely redesigned with a futuristic dual-theme system, featuring both light and dark modes, vibrant brand colors, and real imagery throughout.
 
@@ -30,6 +30,12 @@ The Hona-Qahera (formerly Hona-Cairo) restaurant HTML5 app has been completely r
   - Rebranding from Hona-Cairo to Hona-Qahera with HQ logo
   - Real Unsplash images for all categories, subcategories, and menu items
   - JavaScript theme switching with system preference detection
+- [x] **Inner-page Egyptian decorative accents added**
+  - Added subtle low-opacity corner ornaments inspired by Egyptian geometric motifs
+  - Decorations applied only to inner pages via `body.inner-page` to keep home hero clean
+  - Decorations are fixed to left/right corners and kept away from main content regions
+  - Theme-aware opacity tuning for dark and light modes
+  - Mobile-specific scaling to avoid visual clutter and preserve readability
 
 ## Hona-Qahera Redesign Details
 
@@ -116,6 +122,7 @@ The Hona-Qahera HTML app has been completely redesigned with a dual-mode light/d
 - ✅ Purple/cyan/pink futuristic color palette
 - ✅ Glassmorphism effects on both themes
 - ✅ Responsive design for all devices
+- ✅ Subtle Egyptian cultural corner decorations on inner pages (non-intrusive)
 
 Possible next steps:
 
@@ -186,3 +193,4 @@ export async function GET() {
 | 2026-02-25 | Multi-tenancy design system revamp (CSS architecture, neumorphism, brand identity, mobile-first) |
 | 2026-02-26 | Hona-Qahera dual-mode redesign with light/dark theme toggle, futuristic purple/cyan/pink palette, real Unsplash images |
 | 2026-02-26 | Enhanced theme toggle visibility with prominent cyan border and glow effects |
+| 2026-02-27 | Added low-opacity Egyptian-inspired decorative corner motifs on inner pages (`categories`, `subcategories`, `menu-items`, `gallery`, `rate-us`, `contact-us`) with theme-aware styling |
