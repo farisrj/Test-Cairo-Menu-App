@@ -36,6 +36,10 @@ The Hona-Qahera (formerly Hona-Cairo) restaurant HTML5 app has been completely r
   - Decorations are fixed to left/right corners and kept away from main content regions
   - Theme-aware opacity tuning for dark and light modes
   - Mobile-specific scaling to avoid visual clutter and preserve readability
+- [x] **Converted decorative motifs from inline data-URIs to real SVG assets**
+  - Added reusable decor files in `here-its-cairo-html/decor/` for top/bottom and left/right corners
+  - Updated `styles.css` to reference local SVG files for reliable rendering and easy replacement
+  - Preserved theme-aware opacity and responsive sizing/positioning behavior
 
 ## Hona-Qahera Redesign Details
 
@@ -194,3 +198,4 @@ export async function GET() {
 | 2026-02-26 | Hona-Qahera dual-mode redesign with light/dark theme toggle, futuristic purple/cyan/pink palette, real Unsplash images |
 | 2026-02-26 | Enhanced theme toggle visibility with prominent cyan border and glow effects |
 | 2026-02-27 | Added low-opacity Egyptian-inspired decorative corner motifs on inner pages (`categories`, `subcategories`, `menu-items`, `gallery`, `rate-us`, `contact-us`) with theme-aware styling |
+| 2026-02-27 | Replaced inline decorative SVG data-URIs with physical assets in `here-its-cairo-html/decor/` and wired CSS to use those files |

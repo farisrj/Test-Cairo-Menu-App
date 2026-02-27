@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 260" fill="none">
+  <defs>
+    <linearGradient id="cornerTR" x1="1" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <g stroke="url(#cornerTR)" stroke-linecap="round">
+    <path d="M252 8 Q140 8 140 120" stroke-width="2.2" opacity=".45"/>
+    <path d="M238 22 Q140 22 140 120" stroke-width="1.8" opacity=".35"/>
+    <path d="M224 36 Q140 36 140 120" stroke-width="1.4" opacity=".28"/>
+    <circle cx="140" cy="120" r="24" stroke-width="1.6" opacity=".35"/>
+    <path d="M140 94 L140 146 M114 120 L166 120" stroke-width="1.4" opacity=".25"/>
+  </g>
+</svg>
