@@ -3,9 +3,9 @@
 ## Current State
 
 **Template Status**: ✅ Ready for development
-**Hona-Qahera HTML App**: ✅ Complete redesign with dual-mode light/dark theme + cultural corner decorations on inner pages
+**Hona-Qahera HTML App**: ✅ Complete redesign with dual-mode light/dark theme + cultural corner decorations + randomized decorative photos on inner pages
 
-The Hona-Qahera (formerly Hona-Cairo) restaurant HTML5 app has been completely redesigned with a futuristic dual-theme system, featuring both light and dark modes, vibrant brand colors, and real imagery throughout.
+The Hona-Qahera (formerly Hona-Cairo) restaurant HTML5 app has been completely redesigned with a futuristic dual-theme system, featuring both light and dark modes, vibrant brand colors, real imagery throughout, and randomized decorative photo accents on inner pages.
 
 ## Recently Completed
 
@@ -147,6 +147,7 @@ The Hona-Qahera HTML app has been completely redesigned with a dual-mode light/d
 - ✅ Glassmorphism effects on both themes
 - ✅ Responsive design for all devices
 - ✅ Subtle Egyptian cultural corner decorations on inner pages (non-intrusive)
+- ✅ Randomized decorative photo accents on inner pages (food, ambiance, Cairo themes)
 
 Possible next steps:
 
@@ -225,3 +226,4 @@ export async function GET() {
 | 2026-02-28 | Mixed all 4 decor SVGs into inner-page backgrounds and content-section overlays with gentler opacity/blending so decorations stay visible beneath page objects |
 | 2026-02-28 | Refined Egyptian decorative elements on inner pages with subtler opacity, better corner positioning, and cleaner content-section accents
 | 2026-02-28 | Recreated all 4 Egyptian decorative SVG corner assets with rich cultural motifs (lotus, papyrus, Eye of Horus, scarab, ankh, pyramids, Nile waves, Djed pillar, winged sun disk) in gold gradient palette
+| 2026-02-28 | Added randomized decorative photo accents on inner pages — 12 food/ambiance/Cairo photos in `photos/`, JS randomizer in `js/decor-photos.js`, CSS with theme-aware opacity and staggered fade-in animations
