@@ -36,6 +36,25 @@ The Hona-Qahera (formerly Hona-Cairo) restaurant HTML5 app has been completely r
   - Decorations are fixed to left/right corners and kept away from main content regions
   - Theme-aware opacity tuning for dark and light modes
   - Mobile-specific scaling to avoid visual clutter and preserve readability
+- [x] **Converted decorative motifs from inline data-URIs to real SVG assets**
+  - Added reusable decor files in `here-its-cairo-html/decor/` for top/bottom and left/right corners
+  - Updated `styles.css` to reference local SVG files for reliable rendering and easy replacement
+  - Preserved theme-aware opacity and responsive sizing/positioning behavior
+- [x] **Improved decorative image visibility and integration on inner pages**
+  - Increased corner motif scale and opacity so decorations are clearly visible on all inner pages
+  - Added two integrated decorative overlays inside `.content-section` using selected assets for better design balance
+  - Tuned desktop/mobile positioning and light/dark opacities to preserve readability and UX
+- [x] **Updated decorative asset selection to match provided files**
+  - Swapped inner-page integrated decorative overlays to use `corner-top-right.svg` and `corner-bottom-left.svg`
+  - Kept existing restaurant visual identity by preserving theme-aware opacity, shadows, and responsive sizing
+- [x] **Boosted inner-page decorative visibility for HTML5 pages**
+  - Increased fixed corner decoration prominence by simplifying to two stronger motif anchors
+  - Raised integrated `.content-section` decorative opacity and added blend-mode tuning for dark/light themes
+  - Tuned mobile scale/position to keep decorations visible without harming readability
+- [x] **Mixed all four decorative assets as layered backgrounds under content**
+  - Updated `body.inner-page::before` to combine `corner-top-left`, `corner-top-right`, `corner-bottom-left`, and `corner-bottom-right`
+  - Blended decorative layers more subtly with reduced opacity for smooth under-content display
+  - Updated `.content-section` pseudo-elements to mix top-pair and bottom-pair SVGs with soft-light blending and responsive sizing
 
 ## Hona-Qahera Redesign Details
 
@@ -194,3 +213,8 @@ export async function GET() {
 | 2026-02-26 | Hona-Qahera dual-mode redesign with light/dark theme toggle, futuristic purple/cyan/pink palette, real Unsplash images |
 | 2026-02-26 | Enhanced theme toggle visibility with prominent cyan border and glow effects |
 | 2026-02-27 | Added low-opacity Egyptian-inspired decorative corner motifs on inner pages (`categories`, `subcategories`, `menu-items`, `gallery`, `rate-us`, `contact-us`) with theme-aware styling |
+| 2026-02-27 | Replaced inline decorative SVG data-URIs with physical assets in `here-its-cairo-html/decor/` and wired CSS to use those files |
+| 2026-02-28 | Increased decorative motif prominence and added two selected decorative overlays directly within inner-page content sections for clearer visibility and stronger visual integration |
+| 2026-02-28 | Updated integrated inner-page decorative pair to `corner-top-right.svg` + `corner-bottom-left.svg` while preserving Hona-Qahera theme consistency |
+| 2026-02-28 | Further increased HTML5 inner-page decorative visibility with stronger fixed + integrated motif styling and theme-aware blend adjustments |
+| 2026-02-28 | Mixed all 4 decor SVGs into inner-page backgrounds and content-section overlays with gentler opacity/blending so decorations stay visible beneath page objects |
