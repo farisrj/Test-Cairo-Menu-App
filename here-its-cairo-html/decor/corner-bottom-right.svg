@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" fill="none">
+  <!-- Egyptian-inspired corner decoration: Bottom-Right (mirrored) -->
+  
+  <!-- Outer geometric frame -->
+  <path d="M400 400 L400 20 L380 40 L380 380 L40 380 L20 400 Z" 
+        fill="url(#goldGradBR1)" opacity="0.6"/>
+  
+  <!-- Inner geometric frame -->
+  <path d="M400 400 L400 60 L385 80 L385 385 L80 385 L60 400 Z" 
+        fill="none" stroke="url(#goldGradBR1)" stroke-width="1.5" opacity="0.4"/>
+  
+  <!-- Lotus flower cluster - bottom-right corner -->
+  <g transform="translate(310, 240) scale(1, -1) translate(0, -160)" opacity="0.7">
+    <!-- Central lotus -->
+    <path d="M60 120 Q60 60 30 20 Q60 40 60 0 Q60 40 90 20 Q60 60 60 120Z" 
+          fill="url(#goldGradBR2)" opacity="0.5"/>
+    <!-- Left petal -->
+    <path d="M60 100 Q30 70 10 40 Q40 60 60 100Z" 
+          fill="url(#goldGradBR2)" opacity="0.35"/>
+    <!-- Right petal -->
+    <path d="M60 100 Q90 70 110 40 Q80 60 60 100Z" 
+          fill="url(#goldGradBR2)" opacity="0.35"/>
+  </g>
+  
+  <!-- Nile wave pattern -->
+  <g transform="translate(120, 350)" opacity="0.4">
+    <path d="M0 15 Q15 0 30 15 Q45 30 60 15 Q75 0 90 15 Q105 30 120 15 Q135 0 150 15 Q165 30 180 15 Q195 0 210 15 Q225 30 240 15" 
+          fill="none" stroke="url(#goldGradBR1)" stroke-width="1.5"/>
+    <path d="M0 25 Q15 10 30 25 Q45 40 60 25 Q75 10 90 25 Q105 40 120 25 Q135 10 150 25 Q165 40 180 25 Q195 10 210 25 Q225 40 240 25" 
+          fill="none" stroke="url(#goldGradBR1)" stroke-width="1" opacity="0.6"/>
+  </g>
+  
+  <!-- Geometric repeating border - horizontal (bottom) -->
+  <g opacity="0.5">
+    <rect x="100" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 104 361)"/>
+    <rect x="125" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 129 361)"/>
+    <rect x="150" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 154 361)"/>
+    <rect x="175" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 179 361)"/>
+    <rect x="200" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 204 361)"/>
+    <rect x="225" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 229 361)"/>
+    <rect x="250" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 254 361)"/>
+    <rect x="275" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 279 361)"/>
+    <rect x="300" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 304 361)"/>
+    <rect x="325" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 329 361)"/>
+    <rect x="350" y="357" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 354 361)"/>
+  </g>
+  
+  <!-- Geometric repeating border - vertical (right) -->
+  <g opacity="0.5">
+    <rect x="357" y="100" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 104)"/>
+    <rect x="357" y="125" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 129)"/>
+    <rect x="357" y="150" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 154)"/>
+    <rect x="357" y="175" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 179)"/>
+    <rect x="357" y="200" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 204)"/>
+    <rect x="357" y="225" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 229)"/>
+    <rect x="357" y="250" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 254)"/>
+    <rect x="357" y="275" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 279)"/>
+    <rect x="357" y="300" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 304)"/>
+    <rect x="357" y="325" width="8" height="8" fill="url(#goldGradBR1)" transform="rotate(45 361 329)"/>
+  </g>
+  
+  <!-- Winged sun disk -->
+  <g transform="translate(140, 100)" opacity="0.3">
+    <circle cx="60" cy="20" r="10" fill="url(#goldGradBR2)" opacity="0.5"/>
+    <path d="M60 20 Q30 5 0 15 Q20 10 40 20 Q20 30 0 25 Q30 35 60 20Z" 
+          fill="url(#goldGradBR1)" opacity="0.4"/>
+    <path d="M60 20 Q90 5 120 15 Q100 10 80 20 Q100 30 120 25 Q90 35 60 20Z" 
+          fill="url(#goldGradBR1)" opacity="0.4"/>
+  </g>
+  
+  <!-- Eye of Horus -->
+  <g transform="translate(280, 200)" opacity="0.3">
+    <ellipse cx="30" cy="15" rx="25" ry="12" fill="none" stroke="url(#goldGradBR1)" stroke-width="2"/>
+    <circle cx="30" cy="15" r="6" fill="url(#goldGradBR2)" opacity="0.6"/>
+    <path d="M55 15 Q65 25 55 40 L50 30 Q55 20 55 15Z" fill="url(#goldGradBR1)" opacity="0.4"/>
+    <path d="M5 15 Q-5 25 5 40 L10 30 Q5 20 5 15Z" fill="url(#goldGradBR1)" opacity="0.4"/>
+  </g>
+  
+  <!-- Djed pillar -->
+  <g transform="translate(200, 150)" opacity="0.25">
+    <rect x="15" y="0" width="20" height="80" rx="2" fill="none" stroke="url(#goldGradBR1)" stroke-width="1.5"/>
+    <line x1="10" y1="15" x2="40" y2="15" stroke="url(#goldGradBR1)" stroke-width="1.5"/>
+    <line x1="10" y1="30" x2="40" y2="30" stroke="url(#goldGradBR1)" stroke-width="1.5"/>
+    <line x1="10" y1="45" x2="40" y2="45" stroke="url(#goldGradBR1)" stroke-width="1.5"/>
+    <line x1="10" y1="60" x2="40" y2="60" stroke="url(#goldGradBR1)" stroke-width="1.5"/>
+  </g>
+  
+  <!-- Decorative dots -->
+  <g opacity="0.3">
+    <circle cx="390" cy="40" r="2" fill="url(#goldGradBR2)"/>
+    <circle cx="390" cy="60" r="2" fill="url(#goldGradBR2)"/>
+    <circle cx="390" cy="80" r="2" fill="url(#goldGradBR2)"/>
+    <circle cx="40" cy="390" r="2" fill="url(#goldGradBR2)"/>
+    <circle cx="60" cy="390" r="2" fill="url(#goldGradBR2)"/>
+    <circle cx="80" cy="390" r="2" fill="url(#goldGradBR2)"/>
+  </g>
+  
+  <defs>
+    <linearGradient id="goldGradBR1" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#c9a84c" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#d4af37" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#b8860b" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="goldGradBR2" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#f0d68a" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#c9a84c" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+</svg>
