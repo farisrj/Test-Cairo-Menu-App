@@ -262,20 +262,30 @@ body::before {
     url("../decor/corner-bottom-left.svg"),
     url("../decor/corner-bottom-right.svg");
   background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: auto, clamp(120px, 14vw, 180px), clamp(120px, 14vw, 180px), clamp(110px, 12vw, 160px), clamp(110px, 12vw, 160px);
-  background-position: center, left 0.4rem top 5.5rem, right 0.4rem top 6.5rem, left 0.4rem bottom 6.5rem, right 0.4rem bottom 6.5rem;
-  opacity: 0.55;
+  background-size:
+    auto,
+    clamp(160px, 18vw, 280px),
+    clamp(160px, 18vw, 280px),
+    clamp(160px, 18vw, 280px),
+    clamp(160px, 18vw, 280px);
+  background-position:
+    center,
+    left 0 top 4.5rem,
+    right 0 top 4.5rem,
+    left 0 bottom 5rem,
+    right 0 bottom 5rem;
+  opacity: 0.28;
 }
 
 [data-theme="light"] .inner-page::before {
-  opacity: 0.42;
+  opacity: 0.22;
 }
 
 @media (max-width: 767px) {
   .inner-page::before {
-    background-size: auto, 96px, 96px, 84px, 84px;
-    background-position: center, left 0.2rem top 5.6rem, right 0.2rem top 6.2rem, left 0.2rem bottom 6.2rem, right 0.2rem bottom 6.2rem;
-    opacity: 0.38;
+    background-size: auto, 110px, 110px, 110px, 110px;
+    background-position: center, left 0 top 5.2rem, right 0 top 5.2rem, left 0 bottom 5.5rem, right 0 bottom 5.5rem;
+    opacity: 0.2;
   }
 }
 
@@ -444,6 +454,74 @@ a:hover {
   padding: var(--section-padding-y) var(--container-padding);
   max-width: var(--container-max);
   margin: 0 auto;
+}
+
+/* Inner pages: decorative assets integrated with content areas */
+.inner-page .content-section {
+  position: relative;
+  isolation: isolate;
+}
+
+.inner-page .content-section::before,
+.inner-page .content-section::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  opacity: 0.15;
+  z-index: 0;
+  mix-blend-mode: soft-light;
+}
+
+/* Left corner decoration - subtle Egyptian motif */
+.inner-page .content-section::before {
+  width: clamp(140px, 16vw, 240px);
+  height: clamp(140px, 16vw, 240px);
+  top: 0;
+  left: -0.5rem;
+  background-image: url("../decor/corner-top-left.svg");
+  background-position: left top;
+}
+
+/* Right corner decoration - subtle Egyptian motif */
+.inner-page .content-section::after {
+  width: clamp(140px, 16vw, 240px);
+  height: clamp(140px, 16vw, 240px);
+  right: -0.5rem;
+  bottom: 0;
+  background-image: url("../decor/corner-bottom-right.svg");
+  background-position: right bottom;
+}
+
+.inner-page .content-section > * {
+  position: relative;
+  z-index: 1;
+}
+
+[data-theme="light"] .inner-page .content-section::before,
+[data-theme="light"] .inner-page .content-section::after {
+  opacity: 0.12;
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 767px) {
+  .inner-page .content-section::before,
+  .inner-page .content-section::after {
+    opacity: 0.1;
+    width: 100px;
+    height: 100px;
+  }
+
+  .inner-page .content-section::before {
+    top: 0;
+    left: -0.2rem;
+  }
+
+  .inner-page .content-section::after {
+    right: -0.2rem;
+    bottom: 0;
+  }
 }
 
 /* Modern Grid System */
