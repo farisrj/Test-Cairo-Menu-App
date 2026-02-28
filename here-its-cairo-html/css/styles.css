@@ -524,6 +524,121 @@ a:hover {
   }
 }
 
+/* ── Randomized Decorative Photos ─────────────────────────────────── */
+.decor-photos-container {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.decor-photo {
+  position: absolute;
+  width: clamp(100px, 12vw, 160px);
+  height: clamp(100px, 12vw, 160px);
+  opacity: 0;
+  transform: rotate(var(--rotate, 0deg)) scale(0.9);
+  animation: decorPhotoIn 1s var(--ease-out) forwards;
+  filter: saturate(0.6) brightness(0.85);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+  transition: opacity var(--duration-normal) var(--ease-out);
+}
+
+.decor-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Dark mode: subtle glow + low opacity */
+[data-theme="dark"] .decor-photo {
+  opacity: 0;
+  box-shadow: 0 4px 24px rgba(124, 58, 237, 0.15), 0 0 40px rgba(6, 182, 212, 0.08);
+}
+
+[data-theme="dark"] .decor-photo img {
+  filter: brightness(0.7);
+}
+
+/* Light mode: softer, warmer */
+[data-theme="light"] .decor-photo {
+  filter: saturate(0.5) brightness(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+@keyframes decorPhotoIn {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--rotate, 0deg)) scale(0.7) translateY(20px);
+  }
+  100% {
+    opacity: 0.18;
+    transform: rotate(var(--rotate, 0deg)) scale(1);
+  }
+}
+
+[data-theme="light"] .decor-photo {
+  animation-name: decorPhotoInLight;
+}
+
+@keyframes decorPhotoInLight {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--rotate, 0deg)) scale(0.7) translateY(20px);
+  }
+  100% {
+    opacity: 0.14;
+    transform: rotate(var(--rotate, 0deg)) scale(1);
+  }
+}
+
+/* Mobile: smaller, fewer, less opacity */
+@media (max-width: 767px) {
+  .decor-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: var(--radius-md);
+  }
+
+  @keyframes decorPhotoIn {
+    0% {
+      opacity: 0;
+      transform: rotate(var(--rotate, 0deg)) scale(0.7) translateY(12px);
+    }
+    100% {
+      opacity: 0.12;
+      transform: rotate(var(--rotate, 0deg)) scale(1);
+    }
+  }
+
+  @keyframes decorPhotoInLight {
+    0% {
+      opacity: 0;
+      transform: rotate(var(--rotate, 0deg)) scale(0.7) translateY(12px);
+    }
+    100% {
+      opacity: 0.1;
+      transform: rotate(var(--rotate, 0deg)) scale(1);
+    }
+  }
+}
+
+/* Reduced motion: skip animation, just show at final opacity */
+@media (prefers-reduced-motion: reduce) {
+  .decor-photo {
+    animation: none;
+    opacity: 0.15;
+  }
+
+  [data-theme="light"] .decor-photo {
+    opacity: 0.12;
+  }
+}
+
 /* Modern Grid System */
 .grid {
   display: grid;
